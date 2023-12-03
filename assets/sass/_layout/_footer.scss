@@ -83,6 +83,10 @@
         .footer-blog {
             li {
                 @extend %flex;
+
+                a{
+                    color : white !important;
+                }
                 padding-bottom: 25px;
                 margin-bottom: 25px;
                 border-bottom: 1px solid #ffffff1a;
@@ -131,6 +135,8 @@
         }
     }
 }
+
+
 
 .social-icons {
     margin: -5px;
