@@ -19,8 +19,39 @@
     <link rel="stylesheet" href="assets/css/flaticon.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <style>
-        /* Add your active and inactive button styles here */
+        .banner-section.bg_img {
+            background-position: top !important;
+            background-attachment: scroll;
+        }
+
+        @media (max-width :767px) {
+            .banner-section.bg_img {
+                height: 75vh;
+            }
+        }
+
+        @media (min-width :1024px) {
+            .banner-section.bg_img {
+                height: 100vh;
+
+            }
+        }
+
+        .footer-top {
+            padding-bottom: 80px;
+            background: #06163a;
+            padding-top: 80px;
+        }
+
+
+        @media (min-width: 992px) {
+            .footer-top {
+                padding: 80px 0 80px;
+            }
+        }
+
         .active-button {
             background-color: #ee463b;
             /* Change this to your desired active color */
@@ -37,8 +68,6 @@
 
         }
     </style>
-
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -102,7 +131,7 @@
                     <div class="menu-area">
                         <ul class="menu">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="causes.html">Causes</a></li>
+                            <li><a href="activities.html">Activities</a></li>
                             <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="team.html">Team</a></li>
                             <li><a href="about.html">About Us</a></li>
@@ -231,12 +260,81 @@
         <div class="container">
 
             <div class="d-flex justify-content-center align-items-center mb-5 gap-5">
-                <button id="jammuButton" onclick="showJammuAddress()" class="active-button">Jammu Office</button>
+                <button id="registeredButton" onclick="showRegisteredAddress()" class="active-button">Registered Office</button>
+                <button id="jammuButton" onclick="showJammuAddress()" class="inactive-button">Jammu Office</button>
                 <button id="delhiButton" onclick="showDelhiAddress()" class="inactive-button">Delhi Office</button>
             </div>
 
+            <div id="registeredAddress" class="contact-form-area">
+                <div class="row flex-row-reverse">
+                    <div class="col-lg-8 mb-5 mb-lg-0">
+                        <h4 class="title">Leave A Message</h4>
+                        <form class="contact-form" id="contact_form_submit">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" id="name" name="name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Email" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Phone" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Subject" id="subject" name="subject">
+                            </div>
+                            <div class="form-group w-100">
+                                <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                            </div>
+                            <div class="form-group w-100 text-center">
+                                <button class="custom-button"><span>Send Message</span></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="contact-wrapper">
+                            <div class="contact-item">
+                                <div class="contact-thumb">
+                                    <img src="assets/images/contact/01.png" alt="contact">
+                                </div>
+                                <div class="contact-content">
+                                    <h6 class="title">Office Address</h6>
+                                    <p>3rd floor, 19/13 West Patel Nagar, New Delhi - 11008
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-thumb">
+                                    <img src="assets/images/contact/02.png" alt="contact">
+                                </div>
+                                <div class="contact-content">
+                                    <h6 class="title">Phone number</h6>
+                                    <p>+91 9717494574</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-thumb">
+                                    <img src="assets/images/contact/03.png" alt="contact">
+                                </div>
+                                <div class="contact-content">
+                                    <h6 class="title">Send email </h6>
+                                    <a href="mailto:ss.nathyal@gmail.com">ss.nathyal@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-thumb">
+                                    <img src="assets/images/contact/04.png" alt="contact">
+                                </div>
+                                <div class="contact-content">
+                                    <h6 class="title">Our website</h6>
+                                    <a href="https://radhafoundation.com/">www.radhafoundation.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div id="jammuAddress" class="contact-form-area">
+                </div>
+            </div>
+            <div id="jammuAddress" class="contact-form-area" style = "display: none;">
                 <div class="row flex-row-reverse">
                     <div class="col-lg-8 mb-5 mb-lg-0">
                         <h4 class="title">Leave A Message</h4>
@@ -278,7 +376,7 @@
                                 </div>
                                 <div class="contact-content">
                                     <h6 class="title">Phone number</h6>
-                                    <p class="mb-0">+91 9717494574</p>
+                                    <!-- <p class="mb-0">+91 9717494574</p> -->
                                     <p>01142488669 </p>
 
                                 </div>
@@ -306,7 +404,6 @@
 
                 </div>
             </div>
-
             <div id="delhiAddress" class="contact-form-area" style="display: none;">
                 <div class="row flex-row-reverse">
                     <div class="col-lg-8 mb-5 mb-lg-0">
@@ -340,7 +437,8 @@
                                 </div>
                                 <div class="contact-content">
                                     <h6 class="title">Office Address</h6>
-                                    <p>Jammu & Kashmir</p>
+                                    <p>L-3, Kanchanjunga Building Barakhamba Road, Connaught Place
+                                        New Delhi - 110001</p>
                                 </div>
                             </div>
                             <div class="contact-item">
@@ -349,7 +447,7 @@
                                 </div>
                                 <div class="contact-content">
                                     <h6 class="title">Phone number</h6>
-                                    <p>+91 9717494574</p>
+                                    <p>+91- 98100 3349</p>
                                 </div>
                             </div>
                             <div class="contact-item">
@@ -358,7 +456,7 @@
                                 </div>
                                 <div class="contact-content">
                                     <h6 class="title">Send email </h6>
-                                    <a href="mailto:info@radhafoundation.com">info@radhafoundation.com</a>
+                                    <a href="mailto:info@templeoflearning.com">info@templeoflearning.com</a>
                                 </div>
                             </div>
                             <div class="contact-item">
@@ -367,7 +465,7 @@
                                 </div>
                                 <div class="contact-content">
                                     <h6 class="title">Our website</h6>
-                                    <a href="www.radhafoundation.com">www.radhafoundation.com</a>
+                                    <a href="https://templeoflearning.in/">templeoflearning.in</a>
                                 </div>
                             </div>
                         </div>
@@ -375,6 +473,8 @@
 
                 </div>
             </div>
+
+
         </div>
     </section>
 
@@ -397,48 +497,6 @@
     <!-- ==========Footer Section Starts Here========== -->
     <footer>
         <div class="footer-top">
-            <div class="ft-top">
-                <div class="container">
-                    <div class="row no-gutters justify-content-center">
-                        <div class="col-lg-4 col-sm-6 col-12">
-                            <div class="ftt-item">
-                                <div class="ftt-inner">
-                                    <div class="ftt-thumb">
-                                        <img src="assets/images/footer/icon/01.png" alt="footer-icon">
-                                    </div>
-                                    <div class="ftt-content">
-                                        <p class="mb-0">Phone Number :+91 9717494574</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 col-12">
-                            <div class="ftt-item">
-                                <div class="ftt-inner">
-                                    <div class="ftt-thumb">
-                                        <img src="assets/images/footer/icon/02.png" alt="footer-icon">
-                                    </div>
-                                    <div class="ftt-content">
-                                        <p class="mb-0">Email :info@radhafoundation.com</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 col-12">
-                            <div class="ftt-item">
-                                <div class="ftt-inner">
-                                    <div class="ftt-thumb">
-                                        <img src="assets/images/footer/icon/03.png" alt="footer-icon">
-                                    </div>
-                                    <div class="ftt-content">
-                                        <p class="mb-0">Address : Jammu & Kashmir</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -448,9 +506,9 @@
                                     <div class="footer-widget widget-about">
                                         <h5 class="title text-uppercase">About RADHA FOUNDATION</h5>
                                         <p>
-                                            A beacon of compassion, uplifting lives through transformative initiatives.
-                                            We raise funds to empower communities, creating sustainable change and
-                                            fostering a brighter, inclusive future.
+                                            RadhaFoundation is a nonproﬁt organization supported by community leaders
+
+
                                         </p>
                                         <div class="ftb-map">
                                             <iframe
@@ -464,24 +522,28 @@
                                     <div class="footer-widget widget-blog">
                                         <h5 class="title text-uppercase">Our Quick Links</h5>
                                         <ul class="footer-blog title">
-                                            <li>
-                                                <a href="./causes.html" />
+                                            <li class="d-flex justify-space-between  align-items-center">
+                                                <a href="./index.html" class="w-50" />
+                                                Home
+                                                </a>
+                                                <a href="./causes.html" class="w-50"/>
                                                 Causes
                                                 </a>
                                             </li>
-                                            <li>
-                                                <a href="./gallery.html">
-                                                    Gallery
+                                            <li class="d-flex justify-space-between  align-items-center">
+                                                <a href="./gallery.html" class="w-50" />
+                                                Gallery
+                                                </a>
+                                                <a href="./team.html" class="w-50"/>
+                                                Team
                                                 </a>
                                             </li>
-                                            <li>
-                                                <a href="./team.html">
-                                                    Team
+                                            <li class="d-flex justify-space-between  align-items-center">
+                                                <a href="./about.html" class="w-50" />
+                                                About Us
                                                 </a>
-                                            </li>
-                                            <li>
-                                                <a href="./about.html">
-                                                    About Us
+                                                <a href="./contact.html" class="w-50"/>
+                                                Contact Us
                                                 </a>
                                             </li>
 
@@ -491,14 +553,29 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 pl-xl-4">
                                     <div class="footer-widget widgt-form">
-                                        <h5 class="title text-uppercase">our NEWSLETTER</h5>
-                                        <p>RadhaFoundation is a nonproﬁt organization supported by community leaders</p>
-                                        <form class="footer-form">
-                                            <input type="email" placeholder="Enter your email" name="email">
-                                            <button type="submit">
-                                                <span>send message<i class="far fa-paper-plane ml-2"></i></span>
-                                            </button>
-                                        </form>
+                                        <h5 class="title text-uppercase">Contact Us</h5>
+                                        <!-- <p>RadhaFoundation is a nonproﬁt organization supported by community leaders</p> -->
+                                        <ul>
+                                            <li>
+                                                <a href= "mailto:info@radhafoundation.com" class="d-flex justify-content-start align-items-center" style = "gap : 1rem">
+                                                    <i class="far fa-paper-plane ml-2"></i><p>info@radhafoundation.com</p>
+                                                    
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href = "tel:01142488669" class="d-flex justify-content-start align-items-center" style = "gap : 1rem">
+                                                    <i class="fas fa-phone-alt ml-2"></i><p>01142488669</p>
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href = "#" class="d-flex justify-content-start align-items-center" style = "gap : 1rem">
+                                                    <i class="fas fa-map-marker-alt ml-2"></i><p>338/1A Trikutsnagar,Jammu</p>
+
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -521,17 +598,26 @@
         function showJammuAddress() {
             document.getElementById('jammuAddress').style.display = 'block';
             document.getElementById('delhiAddress').style.display = 'none';
+            document.getElementById('registeredAddress').style.display = 'none';
+
 
             // Toggle button styles
             document.getElementById('jammuButton').classList.add('active-button');
             document.getElementById('jammuButton').classList.remove('inactive-button');
 
+
             document.getElementById('delhiButton').classList.remove('active-button');
             document.getElementById('delhiButton').classList.add('inactive-button');
+
+            
+            document.getElementById('registeredButton').classList.remove('active-button');
+            document.getElementById('registeredButton').classList.add('inactive-button');
         }
 
         function showDelhiAddress() {
             document.getElementById('jammuAddress').style.display = 'none';
+            document.getElementById('registeredAddress').style.display = 'none';
+
             document.getElementById('delhiAddress').style.display = 'block';
 
             // Toggle button styles
@@ -540,6 +626,27 @@
 
             document.getElementById('jammuButton').classList.remove('active-button');
             document.getElementById('jammuButton').classList.add('inactive-button');
+
+            document.getElementById('registeredButton').classList.remove('active-button');
+            document.getElementById('registeredButton').classList.add('inactive-button');
+        }
+
+        
+        function showRegisteredAddress() {
+            document.getElementById('registeredAddress').style.display = 'block';
+
+            document.getElementById('jammuAddress').style.display = 'none';
+            document.getElementById('delhiAddress').style.display = 'none';
+
+            // Toggle button styles
+            document.getElementById('registeredButton').classList.add('active-button');
+            document.getElementById('registeredButton').classList.remove('inactive-button');
+
+            document.getElementById('jammuButton').classList.remove('active-button');
+            document.getElementById('jammuButton').classList.add('inactive-button');
+
+            document.getElementById('delhiButton').classList.remove('active-button');
+            document.getElementById('delhiButton').classList.add('inactive-button');
         }
     </script>
 

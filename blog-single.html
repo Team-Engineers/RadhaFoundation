@@ -20,6 +20,38 @@
     <link rel="stylesheet" href="assets/css/main.css">
 
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <style>
+        .banner-section.bg_img {
+            background-position: top !important;
+            background-attachment: scroll;
+        }
+
+        @media (max-width :767px) {
+            .banner-section.bg_img {
+                height: 75vh;
+            }
+        }
+
+        @media (min-width :1024px) {
+            .banner-section.bg_img {
+                height: 100vh;
+
+            }
+        }
+
+        .footer-top {
+            padding-bottom: 80px;
+            background: #06163a;
+            padding-top: 80px;
+        }
+
+
+        @media (min-width: 992px) {
+            .footer-top {
+                padding: 80px 0 80px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -83,7 +115,7 @@
                     <div class="menu-area">
                         <ul class="menu">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="causes.html">Causes</a></li>
+                            <li><a href="activities.html">Activities</a></li>
                             <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="team.html">Team</a></li>
                             <li><a href="about.html">About Us</a></li>
@@ -660,7 +692,7 @@
     <!-- ==========Footer Section Starts Here========== -->
     <footer>
         <div class="footer-top">
-            <div class="ft-top">
+            <div class="ft-top d-none">
                 <div class="container">
                     <div class="row no-gutters justify-content-center">
                         <div class="col-lg-4 col-sm-6 col-12">
@@ -711,9 +743,9 @@
                                     <div class="footer-widget widget-about">
                                         <h5 class="title text-uppercase">About RADHA FOUNDATION</h5>
                                         <p>
-                                            A beacon of compassion, uplifting lives through transformative initiatives.
-                                            We raise funds to empower communities, creating sustainable change and
-                                            fostering a brighter, inclusive future.
+                                            RadhaFoundation is a nonproﬁt organization supported by community leaders
+
+
                                         </p>
                                         <div class="ftb-map">
                                             <iframe
@@ -727,25 +759,29 @@
                                     <div class="footer-widget widget-blog">
                                         <h5 class="title text-uppercase">Our Quick Links</h5>
                                         <ul class="footer-blog title">
-                                            <li>
-                                                <a href = "./causes.html"/>
+                                            <li class="d-flex justify-space-between  align-items-center">
+                                                <a href="./index.html" class="w-50" />
+                                                Home
+                                                </a>
+                                                <a href="./causes.html" class="w-50"/>
                                                 Causes
-                                            </a>
+                                                </a>
                                             </li>
-                                            <li>
-                                                <a href = "./gallery.html">
+                                            <li class="d-flex justify-space-between  align-items-center">
+                                                <a href="./gallery.html" class="w-50" />
                                                 Gallery
-                                            </a>
-                                            </li>
-                                            <li>
-                                                <a href = "./team.html">
+                                                </a>
+                                                <a href="./team.html" class="w-50"/>
                                                 Team
                                                 </a>
                                             </li>
-                                            <li>
-                                                <a href = "./about.html">
+                                            <li class="d-flex justify-space-between  align-items-center">
+                                                <a href="./about.html" class="w-50" />
                                                 About Us
-                                            </a>
+                                                </a>
+                                                <a href="./contact.html" class="w-50"/>
+                                                Contact Us
+                                                </a>
                                             </li>
 
 
@@ -754,14 +790,29 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 pl-xl-4">
                                     <div class="footer-widget widgt-form">
-                                        <h5 class="title text-uppercase">our NEWSLETTER</h5>
-                                        <p>RadhaFoundation is a nonproﬁt organization supported by community leaders</p>
-                                        <form class="footer-form">
-                                            <input type="email" placeholder="Enter your email" name="email">
-                                            <button type="submit">
-                                                <span>send message<i class="far fa-paper-plane ml-2"></i></span>
-                                            </button>
-                                        </form>
+                                        <h5 class="title text-uppercase">Contact Us</h5>
+                                        <!-- <p>RadhaFoundation is a nonproﬁt organization supported by community leaders</p> -->
+                                        <ul>
+                                            <li>
+                                                <a href= "mailto:info@radhafoundation.com" class="d-flex justify-content-start align-items-center" style = "gap : 1rem">
+                                                    <i class="far fa-paper-plane ml-2"></i><p>info@radhafoundation.com</p>
+                                                    
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href = "tel:01142488669" class="d-flex justify-content-start align-items-center" style = "gap : 1rem">
+                                                    <i class="fas fa-phone-alt ml-2"></i><p>01142488669</p>
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href = "#" class="d-flex justify-content-start align-items-center" style = "gap : 1rem">
+                                                    <i class="fas fa-map-marker-alt ml-2"></i><p>338/1A Trikutsnagar,Jammu</p>
+
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>

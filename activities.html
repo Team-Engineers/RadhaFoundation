@@ -20,6 +20,38 @@
     <link rel="stylesheet" href="assets/css/main.css">
 
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <style>
+        .banner-section.bg_img {
+            background-position: top !important;
+            background-attachment: scroll;
+        }
+
+        @media (max-width :767px) {
+            .banner-section.bg_img {
+                height: 75vh;
+            }
+        }
+
+        @media (min-width :1024px) {
+            .banner-section.bg_img {
+                height: 100vh;
+
+            }
+        }
+
+        .footer-top {
+            padding-bottom: 80px;
+            background: #06163a;
+            padding-top: 80px;
+        }
+
+
+        @media (min-width: 992px) {
+            .footer-top {
+                padding: 80px 0 80px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -83,7 +115,7 @@
                     <div class="menu-area">
                         <ul class="menu">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="causes.html">Causes</a></li>
+                            <li><a href="activities.html">Activities</a></li>
                             <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="team.html">Team</a></li>
                             <li><a href="about.html">About Us</a></li>
@@ -192,13 +224,13 @@
     <section class="page-header bg_img" data-background="assets/images/banner/page-header.jpg">
         <div class="container">
             <div class="page-header-content">
-                <h3 class="title">Our popular Causes</h3>
+                <h3 class="title">Our popular Activities</h3>
                 <ul class="breadcrumb">
                     <li>
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        Causes
+                        Activities
                     </li>
                 </ul>
             </div>
@@ -213,8 +245,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-7">
                     <div class="section-header">
-                        <span class="cate">A help to those who need it</span>
-                        <h3 class="title text-uppercase">Each donation is an essential help for everyone's life</h3>
+                        <!-- <span class="cate">A help to those who need it</span> -->
+                        <h3 class="title text-uppercase">HealthCare Activities</h3>
                     </div>
                 </div>
             </div>
@@ -224,7 +256,7 @@
                         <div class="causes-inner">
                             <div class="causes-thumb">
                                 <img src="assets/images/causes/01.jpg" alt="causes">
-                                <div class="causes-progress">
+                                <div class="causes-progress d-none">
                                     <div class="d-flex flex-wrap justify-content-between align-items-center">
                                         <div class="causes-pro-left text-center">
                                             <h6>Received</h6>
@@ -245,13 +277,13 @@
                                 </div>
                             </div>
                             <div class="causes-content bg-white">
-                                <a href="#" class="causes-catagiry mb-2 text-uppercase">food distribution</a>
-                                <h4 class="title mb-3"><a href="#">Little Help That Goes a Long Way</a></h4>
-                                <p>
+                                <!-- <a href="#" class="causes-catagiry mb-2 text-uppercase">food distribution</a> -->
+                                <h4 class="title mb-3"><a href="#">Covid 19 Relief Work</a></h4>
+                                <!-- <p>
                                     In generosity, lives are transformed. Your donation ripples through communities,
                                     nourishing hope and building resilience. Together, we create a tapestry of support,
                                     weaving brighter futures for those in need.
-                                </p>
+                                </p> -->
                                 <!-- <a href="#" class="custom-button mt-2"><span>Donate Now<i class="fas fa-heart ml-2"></i></span></a> -->
                             </div>
                         </div>
@@ -262,7 +294,7 @@
                         <div class="causes-inner">
                             <div class="causes-thumb">
                                 <img src="assets/images/causes/02.jpg" alt="causes">
-                                <div class="causes-progress">
+                                <div class="causes-progress d-none">
                                     <div class="d-flex flex-wrap justify-content-between align-items-center">
                                         <div class="causes-pro-left text-center">
                                             <h6>Received</h6>
@@ -283,13 +315,13 @@
                                 </div>
                             </div>
                             <div class="causes-content bg-white">
-                                <a href="#" class="causes-catagiry mb-2 text-uppercase">WATER distribution</a>
-                                <h4 class="title mb-3"><a href="#">You Can Give in Jammu Clean Water</a></h4>
-                                <p>
+                                <!-- <a href="#" class="causes-catagiry mb-2 text-uppercase">WATER distribution</a> -->
+                                <h4 class="title mb-3"><a href="#">Our Programs</a></h4>
+                                <!-- <p>
                                     In generosity, lives are transformed. Your donation ripples through communities,
                                     nourishing hope and building resilience. Together, we create a tapestry of support,
                                     weaving brighter futures for those in need.
-                                </p>
+                                </p> -->
                                 <!-- <a href="#" class="custom-button mt-2"><span>Donate Now<i class="fas fa-heart ml-2"></i></span></a> -->
                             </div>
                         </div>
@@ -300,7 +332,7 @@
                         <div class="causes-inner">
                             <div class="causes-thumb">
                                 <img src="assets/images/causes/03.jpg" alt="causes">
-                                <div class="causes-progress">
+                                <div class="causes-progress d-none">
                                     <div class="d-flex flex-wrap justify-content-between align-items-center">
                                         <div class="causes-pro-left text-center">
                                             <h6>Received</h6>
@@ -321,51 +353,50 @@
                                 </div>
                             </div>
                             <div class="causes-content bg-white">
-                                <a href="#" class="causes-catagiry mb-2 text-uppercase">MEDICAL CAMP</a>
-                                <h4 class="title mb-3"><a href="#">Help Children in Jammu</a></h4>
-                                <p>
+                                <!-- <a href="#" class="causes-catagiry mb-2 text-uppercase">MEDICAL CAMP</a> -->
+                                <h4 class="title mb-3"><a href="#">Our Campaigns</a></h4>
+                                <!-- <p>
                                     In generosity, lives are transformed. Your donation ripples through communities,
                                     nourishing hope and building resilience. Together, we create a tapestry of support,
                                     weaving brighter futures for those in need.
-                                </p>
+                                </p> -->
                                 <!-- <a href="#" class="custom-button mt-2"><span>Donate Now<i class="fas fa-heart ml-2"></i></span></a> -->
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==========Causes Section Ends Here========== -->
+
+    <!-- ==========Causes Section Starts Here========== -->
+    <div class="causes-section padding-top padding-bottom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="section-header">
+                        <!-- <span class="cate">A help to those who need it</span> -->
+                        <h3 class="title text-uppercase">Education Activities</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-30-none">
                 <div class="col-xl-4 col-sm-6 col-12">
                     <div class="causes-item mb-30">
                         <div class="causes-inner">
                             <div class="causes-thumb">
                                 <img src="assets/images/causes/04.jpg" alt="causes">
-                                <div class="causes-progress">
-                                    <div class="d-flex flex-wrap justify-content-between align-items-center">
-                                        <div class="causes-pro-left text-center">
-                                            <h6>Received</h6>
-                                            <h6><span>₹70,000</span></h6>
-                                        </div>
-                                        <div class="causes-pro-mid">
-                                            <div class="text-center skill-item">
-                                                <div class="pie"
-                                                    data-pie='{ "index": 4, "round": true, "percent": 70, "colorSlice": "#ffc600", "size": 60, "fontWeight": 700 }'>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="causes-pro-right text-center">
-                                            <h6>Raised</h6>
-                                            <h6><span>₹8.00.000</span></h6>
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
                             <div class="causes-content bg-white">
-                                <a href="#" class="causes-catagiry mb-2 text-uppercase">MEDICAL CAMP</a>
-                                <h4 class="title mb-3"><a href="#">Financial Help For Poor Families</a></h4>
-                                <p>
-                                    In generosity, lives are transformed. Your donation ripples through communities,
-                                    nourishing hope and building resilience. Together, we create a tapestry of support,
-                                    weaving brighter futures for those in need.
-                                </p>
+                                <!-- <a href="#" class="causes-catagiry mb-2 text-uppercase">food distribution</a> -->
+                                <h4 class="title mb-3"><a href="#">Education Empowerment</a></h4>
+                                <!-- <p>
+                                        In generosity, lives are transformed. Your donation ripples through communities,
+                                        nourishing hope and building resilience. Together, we create a tapestry of support,
+                                        weaving brighter futures for those in need.
+                                    </p> -->
                                 <!-- <a href="#" class="custom-button mt-2"><span>Donate Now<i class="fas fa-heart ml-2"></i></span></a> -->
                             </div>
                         </div>
@@ -376,34 +407,15 @@
                         <div class="causes-inner">
                             <div class="causes-thumb">
                                 <img src="assets/images/causes/05.jpg" alt="causes">
-                                <div class="causes-progress">
-                                    <div class="d-flex flex-wrap justify-content-between align-items-center">
-                                        <div class="causes-pro-left text-center">
-                                            <h6>Received</h6>
-                                            <h6><span>₹70,000</span></h6>
-                                        </div>
-                                        <div class="causes-pro-mid">
-                                            <div class="text-center skill-item">
-                                                <div class="pie"
-                                                    data-pie='{ "index": 5, "round": true, "percent": 80, "colorSlice": "#92b92b", "size": 60, "fontWeight": 700 }'>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="causes-pro-right text-center">
-                                            <h6>Raised</h6>
-                                            <h6><span>₹8.00.000</span></h6>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                             <div class="causes-content bg-white">
-                                <a href="#" class="causes-catagiry mb-2 text-uppercase">EDUCATION</a>
-                                <h4 class="title mb-3"><a href="#">Education For Poor Children</a></h4>
-                                <p>
-                                    In generosity, lives are transformed. Your donation ripples through communities,
-                                    nourishing hope and building resilience. Together, we create a tapestry of support,
-                                    weaving brighter futures for those in need.
-                                </p>
+                                <!-- <a href="#" class="causes-catagiry mb-2 text-uppercase">WATER distribution</a> -->
+                                <h4 class="title mb-3"><a href="#">Community Engagement</a></h4>
+                                <!-- <p>
+                                        In generosity, lives are transformed. Your donation ripples through communities,
+                                        nourishing hope and building resilience. Together, we create a tapestry of support,
+                                        weaving brighter futures for those in need.
+                                    </p> -->
                                 <!-- <a href="#" class="custom-button mt-2"><span>Donate Now<i class="fas fa-heart ml-2"></i></span></a> -->
                             </div>
                         </div>
@@ -414,34 +426,15 @@
                         <div class="causes-inner">
                             <div class="causes-thumb">
                                 <img src="assets/images/causes/06.jpg" alt="causes">
-                                <div class="causes-progress">
-                                    <div class="d-flex flex-wrap justify-content-between align-items-center">
-                                        <div class="causes-pro-left text-center">
-                                            <h6>Received</h6>
-                                            <h6><span>₹70,000</span></h6>
-                                        </div>
-                                        <div class="causes-pro-mid">
-                                            <div class="text-center skill-item">
-                                                <div class="pie"
-                                                    data-pie='{ "index": 6, "round": true, "percent": 90, "colorSlice": "#c44057", "size": 60, "fontWeight": 700 }'>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="causes-pro-right text-center">
-                                            <h6>Raised</h6>
-                                            <h6><span>₹8.00.000</span></h6>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                             <div class="causes-content bg-white">
-                                <a href="#" class="causes-catagiry mb-2 text-uppercase">FOOD DISTRIBUTION</a>
-                                <h4 class="title mb-3"><a href="#">Jammu Wildfires Relief Fund</a></h4>
-                                <p>
-                                    In generosity, lives are transformed. Your donation ripples through communities,
-                                    nourishing hope and building resilience. Together, we create a tapestry of support,
-                                    weaving brighter futures for those in need.
-                                </p>
+                                <!-- <a href="#" class="causes-catagiry mb-2 text-uppercase">MEDICAL CAMP</a> -->
+                                <h4 class="title mb-3"><a href="#">Improving Learning</a></h4>
+                                <!-- <p>
+                                        In generosity, lives are transformed. Your donation ripples through communities,
+                                        nourishing hope and building resilience. Together, we create a tapestry of support,
+                                        weaving brighter futures for those in need.
+                                    </p> -->
                                 <!-- <a href="#" class="custom-button mt-2"><span>Donate Now<i class="fas fa-heart ml-2"></i></span></a> -->
                             </div>
                         </div>
@@ -451,12 +444,86 @@
         </div>
     </div>
     <!-- ==========Causes Section Ends Here========== -->
-   
+
+    <!-- ==========Causes Section Starts Here========== -->
+    <div class="causes-section padding-top padding-bottom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="section-header">
+                        <!-- <span class="cate">A help to those who need it</span> -->
+                        <h3 class="title text-uppercase">Support A Cause</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-30-none">
+                <div class="col-xl-4 col-sm-6 col-12">
+                    <div class="causes-item mb-30">
+                        <div class="causes-inner">
+                            <div class="causes-thumb">
+                                <img src="assets/images/causes/07.webp" alt="causes">
+                            </div>
+                            <div class="causes-content bg-white">
+                                <!-- <a href="#" class="causes-catagiry mb-2 text-uppercase">food distribution</a> -->
+                                <h4 class="title mb-3"><a href="#">HEALTH CANNOT WAIT</a></h4>
+                                <!-- <p>
+                                                In generosity, lives are transformed. Your donation ripples through communities,
+                                                nourishing hope and building resilience. Together, we create a tapestry of support,
+                                                weaving brighter futures for those in need.
+                                            </p> -->
+                                <!-- <a href="#" class="custom-button mt-2"><span>Donate Now<i class="fas fa-heart ml-2"></i></span></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 col-12">
+                    <div class="causes-item mb-30">
+                        <div class="causes-inner">
+                            <div class="causes-thumb">
+                                <img src="assets/images/causes/09.webp" alt="causes">
+                            </div>
+                            <div class="causes-content bg-white">
+                                <!-- <a href="#" class="causes-catagiry mb-2 text-uppercase">WATER distribution</a> -->
+                                <h4 class="title mb-3"><a href="#">Shikha Na Ruke</a></h4>
+                                <!-- <p>
+                                                In generosity, lives are transformed. Your donation ripples through communities,
+                                                nourishing hope and building resilience. Together, we create a tapestry of support,
+                                                weaving brighter futures for those in need.
+                                            </p> -->
+                                <!-- <a href="#" class="custom-button mt-2"><span>Donate Now<i class="fas fa-heart ml-2"></i></span></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 col-12">
+                    <div class="causes-item mb-30">
+                        <div class="causes-inner">
+                            <div class="causes-thumb">
+                                <img src="assets/images/causes/08.webp" alt="causes">
+                            </div>
+                            <div class="causes-content bg-white">
+                                <!-- <a href="#" class="causes-catagiry mb-2 text-uppercase">MEDICAL CAMP</a> -->
+                                <h4 class="title mb-3"><a href="#">Tyaari Kal Ki</a></h4>
+                                <!-- <p>
+                                                In generosity, lives are transformed. Your donation ripples through communities,
+                                                nourishing hope and building resilience. Together, we create a tapestry of support,
+                                                weaving brighter futures for those in need.
+                                            </p> -->
+                                <!-- <a href="#" class="custom-button mt-2"><span>Donate Now<i class="fas fa-heart ml-2"></i></span></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==========Causes Section Ends Here========== -->
+
 
     <!-- ==========Footer Section Starts Here========== -->
     <footer>
         <div class="footer-top">
-            <div class="ft-top">
+            <div class="ft-top d-none">
                 <div class="container">
                     <div class="row no-gutters justify-content-center">
                         <div class="col-lg-4 col-sm-6 col-12">
@@ -507,9 +574,9 @@
                                     <div class="footer-widget widget-about">
                                         <h5 class="title text-uppercase">About RADHA FOUNDATION</h5>
                                         <p>
-                                            A beacon of compassion, uplifting lives through transformative initiatives.
-                                            We raise funds to empower communities, creating sustainable change and
-                                            fostering a brighter, inclusive future.
+                                            RadhaFoundation is a nonproﬁt organization supported by community leaders
+
+
                                         </p>
                                         <div class="ftb-map">
                                             <iframe
@@ -523,25 +590,29 @@
                                     <div class="footer-widget widget-blog">
                                         <h5 class="title text-uppercase">Our Quick Links</h5>
                                         <ul class="footer-blog title">
-                                            <li>
-                                                <a href = "./causes.html"/>
+                                            <li class="d-flex justify-space-between  align-items-center">
+                                                <a href="./index.html" class="w-50" />
+                                                Home
+                                                </a>
+                                                <a href="./causes.html" class="w-50"/>
                                                 Causes
-                                            </a>
+                                                </a>
                                             </li>
-                                            <li>
-                                                <a href = "./gallery.html">
+                                            <li class="d-flex justify-space-between  align-items-center">
+                                                <a href="./gallery.html" class="w-50" />
                                                 Gallery
-                                            </a>
-                                            </li>
-                                            <li>
-                                                <a href = "./team.html">
+                                                </a>
+                                                <a href="./team.html" class="w-50"/>
                                                 Team
                                                 </a>
                                             </li>
-                                            <li>
-                                                <a href = "./about.html">
+                                            <li class="d-flex justify-space-between  align-items-center">
+                                                <a href="./about.html" class="w-50" />
                                                 About Us
-                                            </a>
+                                                </a>
+                                                <a href="./contact.html" class="w-50"/>
+                                                Contact Us
+                                                </a>
                                             </li>
 
 
@@ -550,14 +621,29 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 pl-xl-4">
                                     <div class="footer-widget widgt-form">
-                                        <h5 class="title text-uppercase">our NEWSLETTER</h5>
-                                        <p>RadhaFoundation is a nonproﬁt organization supported by community leaders</p>
-                                        <form class="footer-form">
-                                            <input type="email" placeholder="Enter your email" name="email">
-                                            <button type="submit">
-                                                <span>send message<i class="far fa-paper-plane ml-2"></i></span>
-                                            </button>
-                                        </form>
+                                        <h5 class="title text-uppercase">Contact Us</h5>
+                                        <!-- <p>RadhaFoundation is a nonproﬁt organization supported by community leaders</p> -->
+                                        <ul>
+                                            <li>
+                                                <a href= "mailto:info@radhafoundation.com" class="d-flex justify-content-start align-items-center" style = "gap : 1rem">
+                                                    <i class="far fa-paper-plane ml-2"></i><p>info@radhafoundation.com</p>
+                                                    
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href = "tel:01142488669" class="d-flex justify-content-start align-items-center" style = "gap : 1rem">
+                                                    <i class="fas fa-phone-alt ml-2"></i><p>01142488669</p>
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href = "#" class="d-flex justify-content-start align-items-center" style = "gap : 1rem">
+                                                    <i class="fas fa-map-marker-alt ml-2"></i><p>338/1A Trikutsnagar,Jammu</p>
+
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -575,7 +661,7 @@
         </div>
     </footer>
     <!-- ==========Footer Section Ends Here========== -->
-    
+
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/modernizr-3.6.0.min.js"></script>
     <script src="assets/js/plugins.js"></script>
@@ -590,4 +676,5 @@
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
