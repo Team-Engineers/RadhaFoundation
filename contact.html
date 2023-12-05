@@ -67,6 +67,30 @@
             padding: 10px 0;
         }
 
+        .contact-content h6 {
+            color: #003153;
+            font-size: 22px
+        }
+
+        .contact-content p {
+            /* Your CSS styles for the <p> tag within .contact-content class go here */
+            font-size: 18px;
+            color: #0047AB;
+            /* Add any other styles you want */
+        }
+
+        .contact-content a {
+            /* Your CSS styles for the <p> tag within .contact-content class go here */
+                text-decoration: none;
+            font-size: 18px;
+            color: #0047AB;
+            /* Add any other styles you want */
+        }
+
+        .Office {
+            font-size: 20px;
+        }
+
         @media (min-width: 1200px) {
             .container {
                 max-width: 1385px;
@@ -74,9 +98,9 @@
         }
 
         .active-button {
-            background-color: #ee463b;
+            background-color: #72edff;
             /* Change this to your desired active color */
-            color: #fff;
+            color: #0047AB;
             outline: none !important;
             font-weight: bold;
         }
@@ -115,10 +139,10 @@
                             <i class="far fa-clock"></i> 9:30am - 6:30pm Mon - Sun
                         </li>
                         <li>
-                            <a href="#"><i class="fas fa-phone-alt"></i> 011-42488669</a>
+                            <a href="#"><i class="fas fa-phone-alt"></i> +91 9717494574</a>
                         </li>
                         <li>
-                            <i class="fas fa-map-marker-alt"></i>3rd floor, 19/13 West Patel Nagar, New Delhi - 11008
+                            <i class="fas fa-map-marker-alt"></i>3rd floor, 19/13 West Patel Nagar, New Delhi - 110008
                         </li>
                     </ul>
                     <ul class="social-icons">
@@ -212,10 +236,10 @@
         <div class="container">
 
             <div class="d-flex justify-content-center align-items-center mb-5 gap-5">
-                <button id="registeredButton" onclick="showRegisteredAddress()" class="active-button">Registered
+                <button id="registeredButton" onclick="showRegisteredAddress()" class="active-button Office">Registered
                     Office</button>
-                <button id="jammuButton" onclick="showJammuAddress()" class="inactive-button">Jammu Office</button>
-                <button id="delhiButton" onclick="showDelhiAddress()" class="inactive-button">Delhi Office</button>
+                <button id="jammuButton" onclick="showJammuAddress()" class="inactive-button Office">Jammu Office</button>
+                <button id="delhiButton" onclick="showDelhiAddress()" class="inactive-button Office">Delhi Office</button>
             </div>
 
             <div id="registeredAddress" class="contact-form-area">
@@ -239,7 +263,7 @@
                                 <textarea name="message" id="message" placeholder="Your Message"></textarea>
                             </div>
                             <div class="form-group w-100 text-center">
-                                <button class="custom-button"><span>Send Message</span></button>
+                                <button class="custom-button"><span style="font-size: 21px;">Send Message</span></button>
                             </div>
                         </form>
                     </div>
@@ -251,8 +275,7 @@
                                 </div>
                                 <div class="contact-content">
                                     <h6 class="title">Office Address</h6>
-                                    <p>3rd floor, 19/13 West Patel Nagar, New Delhi - 11008
-                                    </p>
+                                    <p>3rd floor, 19/13 West Patel Nagar,</p> <p style="margin-top: -10px;"> New Delhi - 110008 </p>
                                 </div>
                             </div>
                             <div class="contact-item">
@@ -261,7 +284,7 @@
                                 </div>
                                 <div class="contact-content">
                                     <h6 class="title">Phone number</h6>
-                                    <p>+91 9717494574</p>
+                                    <p class="content">011-42488669</p>
                                 </div>
                             </div>
                             <div class="contact-item">
@@ -320,7 +343,8 @@
                                 </div>
                                 <div class="contact-content">
                                     <h6 class="title">Office Address</h6>
-                                    <p>338/1A Trikutsnagar,Jammu - 180020</p>
+                                    <p>338/1A Trikuti Nagar, Jammu</p>
+                                    <p style="margin-top: -10px;">J & K - 180020 </p>
                                 </div>
                             </div>
                             <div class="contact-item">
@@ -330,7 +354,7 @@
                                 <div class="contact-content">
                                     <h6 class="title">Phone number</h6>
                                     <!-- <p class="mb-0">+91 9717494574</p> -->
-                                    <p>011-42488669 </p>
+                                    <p>191-7960041</p>
 
                                 </div>
                             </div>
@@ -400,7 +424,7 @@
                                 </div>
                                 <div class="contact-content">
                                     <h6 class="title">Phone number</h6>
-                                    <p>+91- 98100 3349</p>
+                                    <p>011-45019365</p>
                                 </div>
                             </div>
                             <div class="contact-item">
@@ -409,7 +433,7 @@
                                 </div>
                                 <div class="contact-content">
                                     <h6 class="title">Send email </h6>
-                                    <a href="mailto:info@templeoflearning.com">info@templeoflearning.com</a>
+                                    <a href="mailto:info@templeoflearning.com">info@radhafoundation.com</a>
                                 </div>
                             </div>
                             <div class="contact-item">
@@ -418,7 +442,7 @@
                                 </div>
                                 <div class="contact-content">
                                     <h6 class="title">Our website</h6>
-                                    <a href="https://templeoflearning.in/">templeoflearning.in</a>
+                                    <a href="https://templeoflearning.in/">www.radhafoundation.com</a>
                                 </div>
                             </div>
                         </div>
@@ -559,11 +583,11 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="tel:011-42488669"
+                                                <a href="tel:+91 9717494574"
                                                     class="d-flex justify-content-start align-items-center"
                                                     style="gap : 1rem">
                                                     <i class="fas fa-phone-alt ml-2"></i>
-                                                    <p>011-42488669</p>
+                                                    <p>+91 9717494574</p>
 
                                                 </a>
                                             </li>
@@ -571,7 +595,7 @@
                                                 <a href="#" class="d-flex justify-content-start align-items-center"
                                                     style="gap : 1rem">
                                                     <i class="fas fa-map-marker-alt ml-2"></i>
-                                                    <p>3rd floor, 19/13 West Patel Nagar, New Delhi - 11008</p>
+                                                    <p>3rd floor, 19/13 West Patel Nagar, New Delhi - 110008</p>
 
                                                 </a>
                                             </li>
