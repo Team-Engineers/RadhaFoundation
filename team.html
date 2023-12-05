@@ -21,22 +21,8 @@
 
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <style>
-        .banner-section.bg_img {
-            background-position: top !important;
-            background-attachment: scroll;
-        }
-
-        @media (max-width :767px) {
-            .banner-section.bg_img {
-                height: 75vh;
-            }
-        }
-
-        @media (min-width :1024px) {
-            .banner-section.bg_img {
-                height: 100vh;
-
-            }
+        .page-header {
+            padding: 140px 0;
         }
 
         .footer-top {
@@ -50,6 +36,41 @@
             .footer-top {
                 padding: 80px 0 80px;
             }
+        }
+
+        .menu>li>a {
+            font-size: 20px;
+
+        }
+
+        .header-bottom {
+            background: #06163a;
+            padding: 10px 0;
+        }
+
+        .menu>li>a {
+            color: white;
+            font-size: 20px;
+        }
+
+        .header-bottom {
+            background: black;
+            padding: 10px 0;
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1385px;
+            }
+        }
+
+        .volunteer-item-2 .volunteer-thumb .content::before {
+            /* top: 0 !important; */
+            display: none;
+        }
+
+        .volunteer-item-2 .volunteer-thumb .content::after {
+            display: none;
         }
     </style>
 </head>
@@ -78,10 +99,10 @@
                             <i class="far fa-clock"></i> 9:30am - 6:30pm Mon - Sun
                         </li>
                         <li>
-                            <a href="#"><i class="fas fa-phone-alt"></i> +91 9717494574</a>
+                            <a href="#"><i class="fas fa-phone-alt"></i> 011-42488669</a>
                         </li>
                         <li>
-                            <i class="fas fa-map-marker-alt"></i>Jammu & Kashmir
+                            <i class="fas fa-map-marker-alt"></i>3rd floor, 19/13 West Patel Nagar, New Delhi - 11008
                         </li>
                     </ul>
                     <ul class="social-icons">
@@ -151,81 +172,12 @@
     </div>
     <!-- ===========Header Search=========== -->
 
-    <!-- ===========Header Cart=========== -->
-    <div class="cart-sidebar-area">
-        <div class="top-content">
-            <a href="index.html" class="logo">
-                <img src="assets/images/logo/logo.png" alt="logo">
-            </a>
-            <span class="side-sidebar-close-btn"><i class="fas fa-times"></i></span>
-        </div>
-        <div class="bottom-content">
-            <div class="cart-products">
-                <h4 class="title">Shopping cart</h4>
-                <div class="single-product-item">
-                    <div class="thumb">
-                        <img src="assets/images/shop/01.png" alt="shop">
-                    </div>
-                    <div class="content">
-                        <h4 class="title">Color Pencil</h4>
-                        <div class="price"><span class="pprice">$80.00</span> <del class="dprice">$120.00</del></div>
-                        <a href="#" class="remove-cart">Remove</a>
-                    </div>
-                </div>
-                <div class="single-product-item">
-                    <div class="thumb">
-                        <img src="assets/images/shop/02.png" alt="shop">
-                    </div>
-                    <div class="content">
-                        <h4 class="title">Water Pot</h4>
-                        <div class="price"><span class="pprice">$80.00</span> <del class="dprice">$120.00</del></div>
-                        <a href="#" class="remove-cart">Remove</a>
-                    </div>
-                </div>
-                <div class="single-product-item">
-                    <div class="thumb">
-                        <img src="assets/images/shop/03.png" alt="shop">
-                    </div>
-                    <div class="content">
-                        <h4 class="title">Art Paper</h4>
-                        <div class="price"><span class="pprice">$80.00</span> <del class="dprice">$120.00</del></div>
-                        <a href="#" class="remove-cart">Remove</a>
-                    </div>
-                </div>
-                <div class="single-product-item">
-                    <div class="thumb">
-                        <img src="assets/images/shop/04.png" alt="shop">
-                    </div>
-                    <div class="content">
-                        <h4 class="title">Stop Watch</h4>
-                        <div class="price"><span class="pprice">$80.00</span> <del class="dprice">$120.00</del></div>
-                        <a href="#" class="remove-cart">Remove</a>
-                    </div>
-                </div>
-                <div class="single-product-item">
-                    <div class="thumb">
-                        <img src="assets/images/shop/05.png" alt="shop">
-                    </div>
-                    <div class="content">
-                        <h4 class="title">Comics Book</h4>
-                        <div class="price"><span class="pprice">$80.00</span> <del class="dprice">$120.00</del></div>
-                        <a href="#" class="remove-cart">Remove</a>
-                    </div>
-                </div>
-                <div class="btn-wrapper text-center">
-                    <a href="#" class="custom-button"><span>Checkout</span></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ===========Header Cart=========== -->
-
     <!-- ==========Banner Section Starts Here========== -->
     <section class="page-header bg_img" data-background="assets/images/banner/page-header.jpg">
         <div class="container">
             <div class="page-header-content">
                 <h1 class="title">our team members</h1>
-                <ul class="breadcrumb">
+                <ul class="breadcrumb d-none">
                     <li>
                         <a href="index.html">Home</a>
                     </li>
@@ -257,18 +209,19 @@
                     <div class="volunteer-item-2">
                         <div class="volunteer-thumb">
                             <div class="thumb">
-                                <a href="volunteer-single.html">
+                                <a href="#">
                                     <img src="assets/images/volunteer/09.jpg" alt="volunteer">
                                 </a>
                             </div>
                             <div class="content pos-rel">
-                                <h5 class="title"><a href="volunteer-single.html">S.S.Nathyal</a></h5>
+                                <h5 class="title"><a href="#">S.S.Nathyal</a></h5>
                                 <span>Founder Director
                                 </span>
                             </div>
                         </div>
-                        <div class="volunteer-content d-flex flex-wrap align-items-center justify-content-between px-4">
-                            <ul class="volunteer-social justify-content-center">
+                        <div
+                            class="volunteer-content d-none d-flex flex-wrap align-items-center justify-content-between px-4">
+                            <ul class="volunteer-social d-none  justify-content-center">
                                 <li>
                                     <a href="#0" class="so-share"><i class="fas fa-share-alt"></i></a>
                                 </li>
@@ -285,7 +238,7 @@
                                     <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
                                 </li>
                             </ul>
-                            <a href="#" class="vol-pro">See Profile +</a>
+                            <a href="#" class="vol-pro d-none">See Profile +</a>
                         </div>
                     </div>
                 </div>
@@ -293,18 +246,18 @@
                     <div class="volunteer-item-2">
                         <div class="volunteer-thumb">
                             <div class="thumb">
-                                <a href="volunteer-single.html">
+                                <a href="#">
                                     <img src="assets/images/volunteer/10.jpg" alt="volunteer">
                                 </a>
                             </div>
                             <div class="content pos-rel">
-                                <h5 class="title"><a href="volunteer-single.html">Tanvi NathyaL</a></h5>
+                                <h5 class="title"><a href="#">Tanvi NathyaL</a></h5>
                                 <span>Founder Director
                                 </span>
                             </div>
                         </div>
                         <div class="volunteer-content d-flex flex-wrap align-items-center justify-content-between px-4">
-                            <ul class="volunteer-social justify-content-center">
+                            <ul class="volunteer-social d-none justify-content-center">
                                 <li>
                                     <a href="#0" class="so-share"><i class="fas fa-share-alt"></i></a>
                                 </li>
@@ -321,7 +274,7 @@
                                     <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
                                 </li>
                             </ul>
-                            <a href="#" class="vol-pro">See Profile +</a>
+                            <a href="#" class="vol-pro d-none">See Profile +</a>
                         </div>
                     </div>
                 </div>
@@ -329,17 +282,17 @@
                     <div class="volunteer-item-2">
                         <div class="volunteer-thumb">
                             <div class="thumb">
-                                <a href="volunteer-single.html">
+                                <a href="#">
                                     <img src="assets/images/volunteer/11.jpg" alt="volunteer">
                                 </a>
                             </div>
                             <div class="content pos-rel">
-                                <h5 class="title"><a href="volunteer-single.html">Danisha Nathyal </a></h5>
+                                <h5 class="title"><a href="#">Danisha Nathyal </a></h5>
                                 <span>Core member </span>
                             </div>
                         </div>
                         <div class="volunteer-content d-flex flex-wrap align-items-center justify-content-between px-4">
-                            <ul class="volunteer-social justify-content-center">
+                            <ul class="volunteer-social d-none justify-content-center">
                                 <li>
                                     <a href="#0" class="so-share"><i class="fas fa-share-alt"></i></a>
                                 </li>
@@ -356,7 +309,7 @@
                                     <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
                                 </li>
                             </ul>
-                            <a href="#" class="vol-pro">See Profile +</a>
+                            <a href="#" class="vol-pro d-none">See Profile +</a>
                         </div>
                     </div>
                 </div>
@@ -364,17 +317,17 @@
                     <div class="volunteer-item-2">
                         <div class="volunteer-thumb">
                             <div class="thumb">
-                                <a href="volunteer-single.html">
+                                <a href="#">
                                     <img src="assets/images/volunteer/11.jpg" alt="volunteer">
                                 </a>
                             </div>
                             <div class="content pos-rel">
-                                <h5 class="title"><a href="volunteer-single.html">Abhishek choudary</a></h5>
+                                <h5 class="title"><a href="#">Abhishek choudary</a></h5>
                                 <span>Core member </span>
                             </div>
                         </div>
                         <div class="volunteer-content d-flex flex-wrap align-items-center justify-content-between px-4">
-                            <ul class="volunteer-social justify-content-center">
+                            <ul class="volunteer-social d-none justify-content-center">
                                 <li>
                                     <a href="#0" class="so-share"><i class="fas fa-share-alt"></i></a>
                                 </li>
@@ -391,7 +344,7 @@
                                     <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
                                 </li>
                             </ul>
-                            <a href="#" class="vol-pro">See Profile +</a>
+                            <a href="#" class="vol-pro d-none">See Profile +</a>
                         </div>
                     </div>
                 </div>
@@ -399,17 +352,17 @@
                     <div class="volunteer-item-2">
                         <div class="volunteer-thumb">
                             <div class="thumb">
-                                <a href="volunteer-single.html">
+                                <a href="#">
                                     <img src="assets/images/volunteer/11.jpg" alt="volunteer">
                                 </a>
                             </div>
                             <div class="content pos-rel">
-                                <h5 class="title"><a href="volunteer-single.html">Vikas Maurya</a></h5>
+                                <h5 class="title"><a href="#">Vikas Maurya</a></h5>
                                 <span>Core member </span>
                             </div>
                         </div>
                         <div class="volunteer-content d-flex flex-wrap align-items-center justify-content-between px-4">
-                            <ul class="volunteer-social justify-content-center">
+                            <ul class="volunteer-social d-none justify-content-center">
                                 <li>
                                     <a href="#0" class="so-share"><i class="fas fa-share-alt"></i></a>
                                 </li>
@@ -426,7 +379,7 @@
                                     <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
                                 </li>
                             </ul>
-                            <a href="#" class="vol-pro">See Profile +</a>
+                            <a href="#" class="vol-pro d-none">See Profile +</a>
                         </div>
                     </div>
                 </div>
@@ -442,7 +395,7 @@
                 <div class="col-lg-12">
                     <div class="section-header">
                         <!-- <span class="cate">A help to those who need it</span> -->
-                        <h3 class="title text-uppercase">MANAGEMENT MEMBERS                         </h3>
+                        <h3 class="title text-uppercase">MANAGEMENT MEMBERS </h3>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -450,17 +403,16 @@
                         <div class="volunteer-inner">
                             <div class="volunteer-thumb">
                                 <div class="thumb-inner">
-                                    <a href="volunteer-single.html"><img src="assets/images/volunteer/01.jpg"
-                                            alt="volunteer"></a>
+                                    <a href="#"><img src="assets/images/volunteer/01.jpg" alt="volunteer"></a>
                                 </div>
                             </div>
                             <div class="volunteer-content">
-                                <h6 class="title"><a href="volunteer-single.html"> S. S Nathyal </a></h6>
+                                <h6 class="title"><a href="#"> S. S Nathyal </a></h6>
                                 <span class="info">Chairperson </span>
                                 <p>Volunteers are the heartbeat of our donation mission. Dedicated, compassionate, and
                                     selfless, they embody the spirit of giving. Join us, make a difference, and be part
                                     of change today.</p>
-                                <ul class="volunteer-social">
+                                <ul class="volunteer-social d-none">
                                     <li>
                                         <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
                                     </li>
@@ -486,18 +438,17 @@
                         <div class="volunteer-inner">
                             <div class="volunteer-thumb">
                                 <div class="thumb-inner">
-                                    <a href="volunteer-single.html"><img src="assets/images/volunteer/02.jpg"
-                                            alt="volunteer"></a>
+                                    <a href="#"><img src="assets/images/volunteer/02.jpg" alt="volunteer"></a>
                                 </div>
                             </div>
                             <div class="volunteer-content">
-                                <h6 class="title"><a href="volunteer-single.html"> Tanvi Nathyal</a></h6>
+                                <h6 class="title"><a href="#"> Tanvi Nathyal</a></h6>
                                 <span class="info">Executive Director
                                 </span>
                                 <p>Volunteers are the heartbeat of our donation mission. Dedicated, compassionate, and
                                     selfless, they embody the spirit of giving. Join us, make a difference, and be part
                                     of change today.</p>
-                                <ul class="volunteer-social">
+                                <ul class="volunteer-social d-none">
                                     <li>
                                         <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
                                     </li>
@@ -523,17 +474,16 @@
                         <div class="volunteer-inner">
                             <div class="volunteer-thumb">
                                 <div class="thumb-inner">
-                                    <a href="volunteer-single.html"><img src="assets/images/volunteer/03.jpg"
-                                            alt="volunteer"></a>
+                                    <a href="#"><img src="assets/images/volunteer/03.jpg" alt="volunteer"></a>
                                 </div>
                             </div>
                             <div class="volunteer-content">
-                                <h6 class="title"><a href="volunteer-single.html">Shakun Narania</a></h6>
+                                <h6 class="title"><a href="#">Shakun Narania</a></h6>
                                 <span class="info"> Chief Executive Officer</span>
                                 <p>Volunteers are the heartbeat of our donation mission. Dedicated, compassionate, and
                                     selfless, they embody the spirit of giving. Join us, make a difference, and be part
                                     of change today.</p>
-                                <ul class="volunteer-social">
+                                <ul class="volunteer-social d-none">
                                     <li>
                                         <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
                                     </li>
@@ -559,17 +509,16 @@
                         <div class="volunteer-inner">
                             <div class="volunteer-thumb">
                                 <div class="thumb-inner">
-                                    <a href="volunteer-single.html"><img src="assets/images/volunteer/04.jpg"
-                                            alt="volunteer"></a>
+                                    <a href="#"><img src="assets/images/volunteer/04.jpg" alt="volunteer"></a>
                                 </div>
                             </div>
                             <div class="volunteer-content">
-                                <h6 class="title"><a href="volunteer-single.html">Amita Pandey</a></h6>
+                                <h6 class="title"><a href="#">Amita Pandey</a></h6>
                                 <span class="info">Volunteer</span>
                                 <p>Volunteers are the heartbeat of our donation mission. Dedicated, compassionate, and
                                     selfless, they embody the spirit of giving. Join us, make a difference, and be part
                                     of change today.</p>
-                                <ul class="volunteer-social">
+                                <ul class="volunteer-social d-none">
                                     <li>
                                         <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
                                     </li>
@@ -595,18 +544,17 @@
                         <div class="volunteer-inner">
                             <div class="volunteer-thumb">
                                 <div class="thumb-inner">
-                                    <a href="volunteer-single.html"><img src="assets/images/volunteer/04.jpg"
-                                            alt="volunteer"></a>
+                                    <a href="#"><img src="assets/images/volunteer/04.jpg" alt="volunteer"></a>
                                 </div>
                             </div>
                             <div class="volunteer-content">
-                                <h6 class="title"><a href="volunteer-single.html">Kuldeep Nathyal</a></h6>
-                                <span class="info"> Chief Operating Officer 
+                                <h6 class="title"><a href="#">Kuldeep Nathyal</a></h6>
+                                <span class="info"> Chief Operating Officer
                                 </span>
                                 <p>Volunteers are the heartbeat of our donation mission. Dedicated, compassionate, and
                                     selfless, they embody the spirit of giving. Join us, make a difference, and be part
                                     of change today.</p>
-                                <ul class="volunteer-social">
+                                <ul class="volunteer-social d-none">
                                     <li>
                                         <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
                                     </li>
@@ -632,17 +580,16 @@
                         <div class="volunteer-inner">
                             <div class="volunteer-thumb">
                                 <div class="thumb-inner">
-                                    <a href="volunteer-single.html"><img src="assets/images/volunteer/04.jpg"
-                                            alt="volunteer"></a>
+                                    <a href="#"><img src="assets/images/volunteer/04.jpg" alt="volunteer"></a>
                                 </div>
                             </div>
                             <div class="volunteer-content">
-                                <h6 class="title"><a href="volunteer-single.html">Vipin Maurya</a></h6>
+                                <h6 class="title"><a href="#">Vipin Maurya</a></h6>
                                 <span class="info">Chief Technical Officer</span>
                                 <p>Volunteers are the heartbeat of our donation mission. Dedicated, compassionate, and
                                     selfless, they embody the spirit of giving. Join us, make a difference, and be part
                                     of change today.</p>
-                                <ul class="volunteer-social">
+                                <ul class="volunteer-social d-none">
                                     <li>
                                         <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
                                     </li>
@@ -668,18 +615,17 @@
                         <div class="volunteer-inner">
                             <div class="volunteer-thumb">
                                 <div class="thumb-inner">
-                                    <a href="volunteer-single.html"><img src="assets/images/volunteer/04.jpg"
-                                            alt="volunteer"></a>
+                                    <a href="#"><img src="assets/images/volunteer/04.jpg" alt="volunteer"></a>
                                 </div>
                             </div>
                             <div class="volunteer-content">
-                                <h6 class="title"><a href="volunteer-single.html">Ashok Nathyal </a></h6>
+                                <h6 class="title"><a href="#">Ashok Nathyal </a></h6>
                                 <span class="info">Executive Officer
                                 </span>
                                 <p>Volunteers are the heartbeat of our donation mission. Dedicated, compassionate, and
                                     selfless, they embody the spirit of giving. Join us, make a difference, and be part
                                     of change today.</p>
-                                <ul class="volunteer-social">
+                                <ul class="volunteer-social d-none">
                                     <li>
                                         <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
                                     </li>
@@ -711,25 +657,25 @@
                 <div class="col-lg-12">
                     <div class="section-header">
                         <!-- <span class="cate">A help to those who need it</span> -->
-                        <h3 class="title text-uppercase">ADVISORY COMMITTEE                         </h3>
+                        <h3 class="title text-uppercase">ADVISORY COMMITTEE </h3>
                     </div>
                 </div>
                 <div class="col-xl-4 col-sm-6">
                     <div class="volunteer-item-2">
                         <div class="volunteer-thumb">
                             <div class="thumb">
-                                <a href="volunteer-single.html">
+                                <a href="#">
                                     <img src="assets/images/volunteer/09.jpg" alt="volunteer">
                                 </a>
                             </div>
                             <div class="content pos-rel">
-                                <h5 class="title"><a href="volunteer-single.html">Rajesh MisHra </a></h5>
+                                <h5 class="title"><a href="#">Rajesh MisHra </a></h5>
                                 <span>Founder Director Temple of Learning
                                 </span>
                             </div>
                         </div>
                         <div class="volunteer-content d-flex flex-wrap align-items-center justify-content-between px-4">
-                            <ul class="volunteer-social justify-content-center">
+                            <ul class="volunteer-social d-none justify-content-center">
                                 <li>
                                     <a href="#0" class="so-share"><i class="fas fa-share-alt"></i></a>
                                 </li>
@@ -746,7 +692,7 @@
                                     <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
                                 </li>
                             </ul>
-                            <a href="#" class="vol-pro">See Profile +</a>
+                            <a href="#" class="vol-pro d-none">See Profile +</a>
                         </div>
                     </div>
                 </div>
@@ -754,19 +700,19 @@
                     <div class="volunteer-item-2">
                         <div class="volunteer-thumb">
                             <div class="thumb">
-                                <a href="volunteer-single.html">
+                                <a href="#">
                                     <img src="assets/images/volunteer/10.jpg" alt="volunteer">
                                 </a>
                             </div>
                             <div class="content pos-rel">
-                                <h5 class="title"><a href="volunteer-single.html">Nisha Nathyal</a></h5>
+                                <h5 class="title"><a href="#">Nisha Nathyal</a></h5>
                                 <span>DIG-JKP
 
                                 </span>
                             </div>
                         </div>
                         <div class="volunteer-content d-flex flex-wrap align-items-center justify-content-between px-4">
-                            <ul class="volunteer-social justify-content-center">
+                            <ul class="volunteer-social d-none justify-content-center">
                                 <li>
                                     <a href="#0" class="so-share"><i class="fas fa-share-alt"></i></a>
                                 </li>
@@ -783,7 +729,7 @@
                                     <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
                                 </li>
                             </ul>
-                            <a href="#" class="vol-pro">See Profile +</a>
+                            <a href="#" class="vol-pro d-none">See Profile +</a>
                         </div>
                     </div>
                 </div>
@@ -791,18 +737,18 @@
                     <div class="volunteer-item-2">
                         <div class="volunteer-thumb">
                             <div class="thumb">
-                                <a href="volunteer-single.html">
+                                <a href="#">
                                     <img src="assets/images/volunteer/11.jpg" alt="volunteer">
                                 </a>
                             </div>
                             <div class="content pos-rel">
-                                <h5 class="title"><a href="volunteer-single.html">Vikas Dogra Assistant Professor</a></h5>
+                                <h5 class="title"><a href="#">Vikas Dogra Assistant Professor</a></h5>
                                 <span>Assistant Professor ( J&K UT- Higher Education)
                                 </span>
                             </div>
                         </div>
                         <div class="volunteer-content d-flex flex-wrap align-items-center justify-content-between px-4">
-                            <ul class="volunteer-social justify-content-center">
+                            <ul class="volunteer-social d-none justify-content-center">
                                 <li>
                                     <a href="#0" class="so-share"><i class="fas fa-share-alt"></i></a>
                                 </li>
@@ -819,7 +765,7 @@
                                     <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
                                 </li>
                             </ul>
-                            <a href="#" class="vol-pro">See Profile +</a>
+                            <a href="#" class="vol-pro d-none">See Profile +</a>
                         </div>
                     </div>
                 </div>
@@ -827,19 +773,19 @@
                     <div class="volunteer-item-2">
                         <div class="volunteer-thumb">
                             <div class="thumb">
-                                <a href="volunteer-single.html">
+                                <a href="#">
                                     <img src="assets/images/volunteer/11.jpg" alt="volunteer">
                                 </a>
                             </div>
                             <div class="content pos-rel">
-                                <h5 class="title"><a href="volunteer-single.html">Anupam </a></h5>
-                                <span> Assistant Professor 
-                                    ( J&K UT -Higher Education) 
-                                     </span>
+                                <h5 class="title"><a href="#">Anupam </a></h5>
+                                <span> Assistant Professor
+                                    ( J&K UT -Higher Education)
+                                </span>
                             </div>
                         </div>
                         <div class="volunteer-content d-flex flex-wrap align-items-center justify-content-between px-4">
-                            <ul class="volunteer-social justify-content-center">
+                            <ul class="volunteer-social d-none justify-content-center">
                                 <li>
                                     <a href="#0" class="so-share"><i class="fas fa-share-alt"></i></a>
                                 </li>
@@ -856,7 +802,7 @@
                                     <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
                                 </li>
                             </ul>
-                            <a href="#" class="vol-pro">See Profile +</a>
+                            <a href="#" class="vol-pro d-none">See Profile +</a>
                         </div>
                     </div>
                 </div>
@@ -864,17 +810,17 @@
                     <div class="volunteer-item-2">
                         <div class="volunteer-thumb">
                             <div class="thumb">
-                                <a href="volunteer-single.html">
+                                <a href="#">
                                     <img src="assets/images/volunteer/11.jpg" alt="volunteer">
                                 </a>
                             </div>
                             <div class="content pos-rel">
-                                <h5 class="title"><a href="volunteer-single.html">Neelam Choudary</a></h5>
+                                <h5 class="title"><a href="#">Neelam Choudary</a></h5>
                                 <span>Associate Professor - Jammu University </span>
                             </div>
                         </div>
                         <div class="volunteer-content d-flex flex-wrap align-items-center justify-content-between px-4">
-                            <ul class="volunteer-social justify-content-center">
+                            <ul class="volunteer-social d-none justify-content-center">
                                 <li>
                                     <a href="#0" class="so-share"><i class="fas fa-share-alt"></i></a>
                                 </li>
@@ -891,7 +837,7 @@
                                     <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
                                 </li>
                             </ul>
-                            <a href="#" class="vol-pro">See Profile +</a>
+                            <a href="#" class="vol-pro d-none">See Profile +</a>
                         </div>
                     </div>
                 </div>
@@ -899,18 +845,18 @@
                     <div class="volunteer-item-2">
                         <div class="volunteer-thumb">
                             <div class="thumb">
-                                <a href="volunteer-single.html">
+                                <a href="#">
                                     <img src="assets/images/volunteer/11.jpg" alt="volunteer">
                                 </a>
                             </div>
                             <div class="content pos-rel">
-                                <h5 class="title"><a href="volunteer-single.html">Neena Nathyal</a></h5>
+                                <h5 class="title"><a href="#">Neena Nathyal</a></h5>
                                 <span> Retired-Lecturer JK UT- Education
                                 </span>
                             </div>
                         </div>
                         <div class="volunteer-content d-flex flex-wrap align-items-center justify-content-between px-4">
-                            <ul class="volunteer-social justify-content-center">
+                            <ul class="volunteer-social d-none justify-content-center">
                                 <li>
                                     <a href="#0" class="so-share"><i class="fas fa-share-alt"></i></a>
                                 </li>
@@ -927,7 +873,7 @@
                                     <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
                                 </li>
                             </ul>
-                            <a href="#" class="vol-pro">See Profile +</a>
+                            <a href="#" class="vol-pro d-none">See Profile +</a>
                         </div>
                     </div>
                 </div>
@@ -935,18 +881,18 @@
                     <div class="volunteer-item-2">
                         <div class="volunteer-thumb">
                             <div class="thumb">
-                                <a href="volunteer-single.html">
+                                <a href="#">
                                     <img src="assets/images/volunteer/11.jpg" alt="volunteer">
                                 </a>
                             </div>
                             <div class="content pos-rel">
-                                <h5 class="title"><a href="volunteer-single.html">Susheela Nathyal </a></h5>
+                                <h5 class="title"><a href="#">Susheela Nathyal </a></h5>
                                 <span> Retired Head mistress JK UT - Education
                                 </span>
                             </div>
                         </div>
                         <div class="volunteer-content d-flex flex-wrap align-items-center justify-content-between px-4">
-                            <ul class="volunteer-social justify-content-center">
+                            <ul class="volunteer-social d-none justify-content-center">
                                 <li>
                                     <a href="#0" class="so-share"><i class="fas fa-share-alt"></i></a>
                                 </li>
@@ -963,7 +909,7 @@
                                     <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
                                 </li>
                             </ul>
-                            <a href="#" class="vol-pro">See Profile +</a>
+                            <a href="#" class="vol-pro d-none">See Profile +</a>
                         </div>
                     </div>
                 </div>
@@ -971,18 +917,18 @@
                     <div class="volunteer-item-2">
                         <div class="volunteer-thumb">
                             <div class="thumb">
-                                <a href="volunteer-single.html">
+                                <a href="#">
                                     <img src="assets/images/volunteer/11.jpg" alt="volunteer">
                                 </a>
                             </div>
                             <div class="content pos-rel">
-                                <h5 class="title"><a href="volunteer-single.html">Viney Khajuria</a></h5>
+                                <h5 class="title"><a href="#">Viney Khajuria</a></h5>
                                 <span> Principal- IDPS Akhnoor J&K
                                 </span>
                             </div>
                         </div>
                         <div class="volunteer-content d-flex flex-wrap align-items-center justify-content-between px-4">
-                            <ul class="volunteer-social justify-content-center">
+                            <ul class="volunteer-social d-none justify-content-center">
                                 <li>
                                     <a href="#0" class="so-share"><i class="fas fa-share-alt"></i></a>
                                 </li>
@@ -999,7 +945,7 @@
                                     <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
                                 </li>
                             </ul>
-                            <a href="#" class="vol-pro">See Profile +</a>
+                            <a href="#" class="vol-pro d-none">See Profile +</a>
                         </div>
                     </div>
                 </div>
@@ -1007,19 +953,19 @@
                     <div class="volunteer-item-2">
                         <div class="volunteer-thumb">
                             <div class="thumb">
-                                <a href="volunteer-single.html">
+                                <a href="#">
                                     <img src="assets/images/volunteer/11.jpg" alt="volunteer">
                                 </a>
                             </div>
                             <div class="content pos-rel">
-                                <h5 class="title"><a href="volunteer-single.html">Sunil Malik</a></h5>
-                                <span> Chairman, Sun group of companies 
+                                <h5 class="title"><a href="#">Sunil Malik</a></h5>
+                                <span> Chairman, Sun group of companies
 
                                 </span>
                             </div>
                         </div>
                         <div class="volunteer-content d-flex flex-wrap align-items-center justify-content-between px-4">
-                            <ul class="volunteer-social justify-content-center">
+                            <ul class="volunteer-social d-none justify-content-center">
                                 <li>
                                     <a href="#0" class="so-share"><i class="fas fa-share-alt"></i></a>
                                 </li>
@@ -1036,7 +982,7 @@
                                     <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
                                 </li>
                             </ul>
-                            <a href="#" class="vol-pro">See Profile +</a>
+                            <a href="#" class="vol-pro d-none">See Profile +</a>
                         </div>
                     </div>
                 </div>
@@ -1044,19 +990,19 @@
                     <div class="volunteer-item-2">
                         <div class="volunteer-thumb">
                             <div class="thumb">
-                                <a href="volunteer-single.html">
+                                <a href="#">
                                     <img src="assets/images/volunteer/11.jpg" alt="volunteer">
                                 </a>
                             </div>
                             <div class="content pos-rel">
-                                <h5 class="title"><a href="volunteer-single.html"> Sunil Jain</a></h5>
+                                <h5 class="title"><a href="#"> Sunil Jain</a></h5>
                                 <span> Key man, Nagina/Pratham Enterprises
 
                                 </span>
                             </div>
                         </div>
                         <div class="volunteer-content d-flex flex-wrap align-items-center justify-content-between px-4">
-                            <ul class="volunteer-social justify-content-center">
+                            <ul class="volunteer-social d-none justify-content-center">
                                 <li>
                                     <a href="#0" class="so-share"><i class="fas fa-share-alt"></i></a>
                                 </li>
@@ -1073,7 +1019,7 @@
                                     <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
                                 </li>
                             </ul>
-                            <a href="#" class="vol-pro">See Profile +</a>
+                            <a href="#" class="vol-pro d-none">See Profile +</a>
                         </div>
                     </div>
                 </div>
@@ -1155,8 +1101,8 @@
                                                 <a href="./index.html" class="w-50" />
                                                 Home
                                                 </a>
-                                                <a href="./causes.html" class="w-50" />
-                                                Causes
+                                                <a href="./activities.html" class="w-50" />
+                                                Activities
                                                 </a>
                                             </li>
                                             <li class="d-flex justify-space-between  align-items-center">
@@ -1196,11 +1142,11 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="tel:01142488669"
+                                                <a href="tel:011-42488669"
                                                     class="d-flex justify-content-start align-items-center"
                                                     style="gap : 1rem">
                                                     <i class="fas fa-phone-alt ml-2"></i>
-                                                    <p>01142488669</p>
+                                                    <p>011-42488669</p>
 
                                                 </a>
                                             </li>
@@ -1208,7 +1154,7 @@
                                                 <a href="#" class="d-flex justify-content-start align-items-center"
                                                     style="gap : 1rem">
                                                     <i class="fas fa-map-marker-alt ml-2"></i>
-                                                    <p>338/1A Trikutsnagar,Jammu</p>
+                                                    <p>3rd floor, 19/13 West Patel Nagar, New Delhi - 11008</p>
 
                                                 </a>
                                             </li>
