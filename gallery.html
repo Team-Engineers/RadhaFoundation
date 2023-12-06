@@ -43,34 +43,42 @@
 
         }
 
-        .header-bottom {
-            background: #06163a;
-            padding: 10px 0;
-        }
+        
 
         .menu>li>a {
             color: white;
             font-size: 20px;
         }
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: "Barlow", sans-serif;
-        }
+
 
         .header-bottom {
             background: black;
-            padding: 10px 0;
+            /* padding: 10px 0; */
         }
 
         @media (min-width: 1200px) {
             .container {
                 max-width: 1385px;
             }
+        }
+
+        .gallery-item-3 .gallery-content .title {
+
+            padding: 0 20px;
+        }
+
+        .header-wrapper .menu-area  .menu{
+            margin : 0px;
+            padding : 0px;
+        }
+
+        .header-wrapper .logo h6{
+            font-weight: 500;
+        }
+
+        .menu.active {
+        background-color: black;
         }
     </style>
 </head>
@@ -127,11 +135,15 @@
         </div>
         <div class="header-bottom">
             <div class="container">
-                <div class="header-wrapper">
-                    <div class="logo">
+                <div class="header-wrapper style=" height: 60px;"">
+                    <div class="logo w-25 d-flex justify-content-center align-items-center flex-column">
                         <a href="index.html">
-                            <img src="assets/images/logo/logo.png" alt="logo" style="height: 60px;">
+                            <img src="assets/images/logo/logo.png" alt="logo" style="height: 40px;">
                         </a>
+                        <a href="index.html" class="d-none d-md-block" style="height: 20px;">
+                            <h6 class="mb-0 text-white text-center">Service to Humanity is Service to God</h6>
+                        </a>
+
                     </div>
                     <div class="menu-area">
                         <ul class="menu">
@@ -176,7 +188,7 @@
     <section class="page-header bg_img" data-background="assets/images/banner/page-header.jpg">
         <div class="container">
             <div class="page-header-content">
-                <h1 class="title">Photographs (Recent Activities)</h1>
+                <h1 class="title">Photographs <span style="text-transform: none;">(Recent Activities)</span></h1>
                 <ul class="breadcrumb d-none">
                     <li>
                         <a href="index.html">Home</a>
@@ -190,86 +202,174 @@
     </section>
     <!-- ==========Banner Section Ends Here========== -->
 
-
     <!-- ==========Gallery Section Starts Here========== -->
-    <div class="gallery-section padding-top padding-bottom pos-rel">
-        <div class="top-shape-center">
-            <img src="assets/css/img/gallery1.png" alt="css">
-        </div>
-        <div class="bottom-shape-left">
-            <img src="assets/css/img/bottom-shape.png" alt="css">
-        </div>
+    <div class="gallery-section padding-top padding-bottom bg-white">
         <div class="container">
-            <ul class="filter-2">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 d-none">
+                    <div class="section-header">
+                        <span class="cate">OUR PROJECT PHOTOS</span>
+                        <h3 class="title text-uppercase">OUR RECENT PHOTO GALLERY</h3>
+                    </div>
+                </div>
+            </div>
+            <ul class="filter-2 d-none">
                 <li data-filter="*" class="active"><span class="category">All</span></li>
                 <li data-filter=".toddler"><span class="category">charity</span></li>
                 <li data-filter=".preschool"><span class="category">HEALTH</span></li>
                 <li data-filter=".programe"><span class="category">FOOD</span></li>
                 <li data-filter=".kinder"><span class="category">EDUCATION</span></li>
             </ul>
-            <div class="masonary-wrapper three-items">
+            <div class="masonary-wrapper lg-three-items">
                 <div class="masonary-item preschool programe">
-                    <div class="masonary-thumb">
-                        <a href="assets/images/gallery/01.jpg" class="img-pop"><i class="fas fa-expand"></i></a>
-                        <img src="assets/images/gallery/01.jpg" alt="gallery">
+                    <div class="gallery-item-3">
+                        <div class="gallery-thumb">
+                            <a class="img-pop" href="assets/images/gallery/01.jpg"><img
+                                    src="assets/images/gallery/01.jpg" alt="gallery"></a>
+                        </div>
+                        <div class="gallery-content">
+                            <a href="assets/images/gallery/01.jpg" class="img-pop"><i class="fas fa-expand"></i></a>
+                            <!-- <h5 class="title">Edge Catalysts For Change</h5> -->
+                            <!-- <span>Financial | Human</span> -->
+                        </div>
                     </div>
                 </div>
                 <div class="masonary-item toddler kinder">
-                    <div class="masonary-thumb">
-                        <a href="assets/images/gallery/02.jpg" class="img-pop"><i class="fas fa-expand"></i></a>
-                        <img src="assets/images/gallery/02.jpg" alt="gallery">
+                    <div class="gallery-item-3">
+                        <div class="gallery-thumb">
+                            <a class="img-pop" href="assets/images/gallery/02.jpg"><img
+                                    src="assets/images/gallery/02.jpg" alt="gallery"></a>
+                        </div>
+                        <div class="gallery-content">
+                            <a href="assets/images/gallery/02.jpg" class="img-pop"><i class="fas fa-expand"></i></a>
+                            <h5 class="title">Organised by RADHA FOUNDATION JAMMU</h5>
+                            <!-- <span>Financial | Human</span> -->
+                        </div>
                     </div>
                 </div>
                 <div class="masonary-item preschool kinder">
-                    <div class="masonary-thumb">
-                        <a href="assets/images/gallery/03.jpg" class="img-pop"><i class="fas fa-expand"></i></a>
-                        <img src="assets/images/gallery/03.jpg" alt="gallery">
+                    <div class="gallery-item-3">
+                        <div class="gallery-thumb">
+                            <a class="img-pop" href="assets/images/gallery/03.jpg"><img
+                                    src="assets/images/gallery/03.jpg" alt="gallery"></a>
+                        </div>
+                        <div class="gallery-content">
+                            <a href="assets/images/gallery/03.jpg" class="img-pop"><i class="fas fa-expand"></i></a>
+                            <!-- <h5 class="title">Cuting Edge Mindshare Visa</h5> -->
+                            <!-- <span>Resources | Strategy</span> -->
+                        </div>
                     </div>
                 </div>
                 <div class="masonary-item toddler programe">
-                    <div class="masonary-thumb">
-                        <a href="assets/images/gallery/04.jpg" class="img-pop"><i class="fas fa-expand"></i></a>
-                        <img src="assets/images/gallery/04.jpg" alt="gallery">
+                    <div class="gallery-item-3">
+                        <div class="gallery-thumb">
+                            <a class="img-pop" href="assets/images/gallery/04.jpg"><img
+                                    src="assets/images/gallery/04.jpg" alt="gallery"></a>
+                        </div>
+                        <div class="gallery-content">
+                            <a href="assets/images/gallery/04.jpg" class="img-pop"><i class="fas fa-expand"></i></a>
+                            <h5 class="title">Organised by RADHA FOUNDATION<br> DELHI</h5>
+                            <!-- <span>Start Ups | Resources</span> -->
+                        </div>
                     </div>
                 </div>
                 <div class="masonary-item preschool kinder">
-                    <div class="masonary-thumb">
-                        <a href="assets/images/gallery/05.jpg" class="img-pop"><i class="fas fa-expand"></i></a>
-                        <img src="assets/images/gallery/05.jpg" alt="gallery">
+                    <div class="gallery-item-3">
+                        <div class="gallery-thumb">
+                            <a class="img-pop" href="assets/images/gallery/05.jpg"><img
+                                    src="assets/images/gallery/05.jpg" alt="gallery"></a>
+                        </div>
+                        <div class="gallery-content">
+                            <a href="assets/images/gallery/05.jpg" class="img-pop"><i class="fas fa-expand"></i></a>
+                            <h5 class="title">Organised by RADHA FOUNDATION<br> DELHI</h5>
+                            <!-- <span>Financial | Human</span> -->
+                        </div>
                     </div>
                 </div>
                 <div class="masonary-item toddler preschool kinder">
-                    <div class="masonary-thumb">
-                        <a href="assets/images/gallery/06.jpg" class="img-pop"><i class="fas fa-expand"></i></a>
-                        <img src="assets/images/gallery/06.jpg" alt="gallery">
+                    <div class="gallery-item-3">
+                        <div class="gallery-thumb">
+                            <a class="img-pop" href="assets/images/gallery/06.jpg"><img
+                                    src="assets/images/gallery/06.jpg" alt="gallery"></a>
+                        </div>
+                        <div class="gallery-content">
+                            <a href="assets/images/gallery/06.jpg" class="img-pop"><i class="fas fa-expand"></i></a>
+                            <!-- <h5 class="title">Cuting Edge Mindshare Visa</h5> -->
+                            <!-- <span>Resources | Strategy</span> -->
+                        </div>
                     </div>
                 </div>
-                <div class="masonary-item preschool">
-                    <div class="masonary-thumb">
-                        <a href="assets/images/gallery/07.jpg" class="img-pop"><i class="fas fa-expand"></i></a>
-                        <img src="assets/images/gallery/07.jpg" alt="gallery">
+                <div class="masonary-item preschool programe">
+                    <div class="gallery-item-3">
+                        <div class="gallery-thumb">
+                            <a class="img-pop" href="assets/images/gallery/07.jpg"><img
+                                    src="assets/images/gallery/07.jpg" alt="gallery"></a>
+                        </div>
+                        <div class="gallery-content">
+                            <a href="assets/images/gallery/07.jpg" class="img-pop"><i class="fas fa-expand"></i></a>
+                            <h5 class="title">Organised by RADHA FOUNDATION JAMMU</h5>
+                            <!-- <span>Start Ups | Resources</span> -->
+                        </div>
                     </div>
                 </div>
                 <div class="masonary-item toddler kinder">
-                    <div class="masonary-thumb">
-                        <a href="assets/images/gallery/08.jpg" class="img-pop"><i class="fas fa-expand"></i></a>
-                        <img src="assets/images/gallery/08.jpg" alt="gallery">
+                    <div class="gallery-item-3">
+                        <div class="gallery-thumb">
+                            <a class="img-pop" href="assets/images/gallery/08.jpg"><img
+                                    src="assets/images/gallery/08.jpg" alt="gallery"></a>
+                        </div>
+                        <div class="gallery-content">
+                            <a href="assets/images/gallery/08.jpg" class="img-pop"><i class="fas fa-expand"></i></a>
+                            <!-- <h5 class="title">Plagiarze Reable Bandwdth</h5> -->
+                            <!-- <span>Resources | Strategy</span> -->
+                        </div>
                     </div>
                 </div>
                 <div class="masonary-item toddler kinder preschool">
-                    <div class="masonary-thumb">
-                        <a href="assets/images/gallery/09.jpg" class="img-pop"><i class="fas fa-expand"></i></a>
-                        <img src="assets/images/gallery/09.jpg" alt="gallery">
+                    <div class="gallery-item-3">
+                        <div class="gallery-thumb">
+                            <a class="img-pop" href="assets/images/gallery/09.jpg"><img
+                                    src="assets/images/gallery/09.jpg" alt="gallery"></a>
+                        </div>
+                        <div class="gallery-content">
+                            <a href="assets/images/gallery/09.jpg" class="img-pop"><i class="fas fa-expand"></i></a>
+                            <h5 class="title">Organised by RADHA FOUNDATION JAMMU</h5>
+                            <!-- <span>Start Ups | Resources</span> -->
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="load-more">
-                <a href="#" class="custom-button"><span>Get Started Now</span></a>
+                <div class="masonary-item toddler kinder preschool">
+                    <div class="gallery-item-3">
+                        <div class="gallery-thumb">
+                            <a class="img-pop" href="assets/images/gallery/10.jpg"><img
+                                    src="assets/images/gallery/10.jpg" alt="gallery"></a>
+                        </div>
+                        <div class="gallery-content">
+                            <a href="assets/images/gallery/10.jpg" class="img-pop"><i class="fas fa-expand"></i></a>
+                            <h5 class="title">Organised by RADHA FOUNDATION <br> DELHI</h5>
+                            <!-- <span>Start Ups | Resources</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="masonary-item toddler kinder preschool">
+                    <div class="gallery-item-3">
+                        <div class="gallery-thumb">
+                            <a class="img-pop" href="assets/images/gallery/11.jpg"><img
+                                    src="assets/images/gallery/11.jpg" alt="gallery"></a>
+                        </div>
+                        <div class="gallery-content">
+                            <a href="assets/images/gallery/11.jpg" class="img-pop"><i class="fas fa-expand"></i></a>
+                            <h5 class="title">Organised by RADHA FOUNDATION JAMMU</h5>
+                            <!-- <span>Start Ups | Resources</span> -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- ==========Gallery Section Ends Here========== -->
-    
+
+
     <!-- ==========Footer Section Starts Here========== -->
     <footer>
         <div class="footer-top">
@@ -323,10 +423,12 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="footer-widget widget-about">
                                         <h5 class="title text-uppercase">About RADHA FOUNDATION</h5>
-                                        <p>
-                                            RadhaFoundation is a nonproﬁt organization supported by community leaders
-
-
+                                        
+                                        <p> Radha Foundation is a proprietorship concern of Mrs. Radha
+                                            Nathyal Memorial Foundation. Foundation is a section 25 company under
+                                            Companies act 2013 for social/charitable purposes. It has been established
+                                            in memory of Mrs Radha Rani Nathyal who expired on 5th of May, 2021 during
+                                            second Covid wave.
                                         </p>
                                         <div class="ftb-map">
                                             <iframe
@@ -434,4 +536,5 @@
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
