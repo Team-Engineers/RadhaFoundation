@@ -43,28 +43,18 @@
 
         }
 
-        .header-bottom {
-            background: #06163a;
-            padding: 10px 0;
-        }
+        
 
         .menu>li>a {
             color: white;
             font-size: 20px;
         }
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: "Barlow", sans-serif;
-        }
+
 
         .header-bottom {
             background: black;
-            padding: 10px 0;
+            /* padding: 10px 0; */
         }
 
         @media (min-width: 1200px) {
@@ -76,6 +66,15 @@
         .gallery-item-3 .gallery-content .title {
 
             padding: 0 20px;
+        }
+
+        .header-wrapper .menu-area  .menu{
+            margin : 0px;
+            padding : 0px;
+        }
+
+        .header-wrapper .logo h6{
+            font-weight: 500;
         }
     </style>
 </head>
@@ -132,11 +131,15 @@
         </div>
         <div class="header-bottom">
             <div class="container">
-                <div class="header-wrapper">
-                    <div class="logo">
+                <div class="header-wrapper style=" height: 60px;"">
+                    <div class="logo w-25 d-flex justify-content-center align-items-center flex-column">
                         <a href="index.html">
-                            <img src="assets/images/logo/logo.png" alt="logo" style="height: 60px;">
+                            <img src="assets/images/logo/logo.png" alt="logo" style="height: 40px;">
                         </a>
+                        <a href="index.html" class="d-none d-md-block" style="height: 20px;">
+                            <h6 class="mb-0 text-white text-center">Service to Humanity is Service to God</h6>
+                        </a>
+
                     </div>
                     <div class="menu-area">
                         <ul class="menu">
@@ -261,7 +264,7 @@
                         </div>
                         <div class="gallery-content">
                             <a href="assets/images/gallery/04.jpg" class="img-pop"><i class="fas fa-expand"></i></a>
-                            <h5 class="title">Organised by RADHA FOUNDATION DELHI</h5>
+                            <h5 class="title">Organised by RADHA FOUNDATION<br> DELHI</h5>
                             <!-- <span>Start Ups | Resources</span> -->
                         </div>
                     </div>
@@ -274,7 +277,7 @@
                         </div>
                         <div class="gallery-content">
                             <a href="assets/images/gallery/05.jpg" class="img-pop"><i class="fas fa-expand"></i></a>
-                            <h5 class="title">Organised by RADHA FOUNDATION DELHI</h5>
+                            <h5 class="title">Organised by RADHA FOUNDATION<br> DELHI</h5>
                             <!-- <span>Financial | Human</span> -->
                         </div>
                     </div>
@@ -339,7 +342,7 @@
                         </div>
                         <div class="gallery-content">
                             <a href="assets/images/gallery/10.jpg" class="img-pop"><i class="fas fa-expand"></i></a>
-                            <h5 class="title">Organised by RADHA FOUNDATION DELHI</h5>
+                            <h5 class="title">Organised by RADHA FOUNDATION <br> DELHI</h5>
                             <!-- <span>Start Ups | Resources</span> -->
                         </div>
                     </div>
@@ -376,8 +379,7 @@
                                         <img src="assets/images/footer/icon/01.png" alt="footer-icon">
                                     </div>
                                     <div class="ftt-content">
-                                        <p class="mb-0">Phone Number :+91 9717494574
-                                        </p>
+                                        <p class="mb-0">Phone Number :+91 9717494574</p>
                                     </div>
                                 </div>
                             </div>
@@ -389,8 +391,7 @@
                                         <img src="assets/images/footer/icon/02.png" alt="footer-icon">
                                     </div>
                                     <div class="ftt-content">
-                                        <p class="mb-0">Email
-                                            :info@radhafoundation.com</p>
+                                        <p class="mb-0">Email :info@radhafoundation.com</p>
                                     </div>
                                 </div>
                             </div>
@@ -402,8 +403,7 @@
                                         <img src="assets/images/footer/icon/03.png" alt="footer-icon">
                                     </div>
                                     <div class="ftt-content">
-                                        <p class="mb-0">Address : Jammu & Kashmir
-                                        </p>
+                                        <p class="mb-0">Address : Jammu & Kashmir</p>
                                     </div>
                                 </div>
                             </div>
@@ -418,14 +418,13 @@
                             <div class="row">
                                 <div class="col-lg-4 col-md-6">
                                     <div class="footer-widget widget-about">
-                                        <h5 class="title text-uppercase">About RADHA
-                                            FOUNDATION</h5>
-                                        <p>
-                                            RadhaFoundation is a nonproﬁt
-                                            organization supported by community
-                                            leaders
-
-
+                                        <h5 class="title text-uppercase">About RADHA FOUNDATION</h5>
+                                        
+                                        <p> Radha Foundation is a proprietorship concern of Mrs. Radha
+                                            Nathyal Memorial Foundation. Foundation is a section 25 company under
+                                            Companies act 2013 for social/charitable purposes. It has been established
+                                            in memory of Mrs Radha Rani Nathyal who expired on 5th of May, 2021 during
+                                            second Covid wave.
                                         </p>
                                         <div class="ftb-map">
                                             <iframe
@@ -437,8 +436,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6">
                                     <div class="footer-widget widget-blog">
-                                        <h5 class="title text-uppercase">Our Quick
-                                            Links</h5>
+                                        <h5 class="title text-uppercase">Our Quick Links</h5>
                                         <ul class="footer-blog title">
                                             <li class="d-flex justify-space-between  align-items-center">
                                                 <a href="./index.html" class="w-50" />
@@ -471,8 +469,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 pl-xl-4">
                                     <div class="footer-widget widget-blog">
-                                        <h5 class="title text-uppercase">Contact Us
-                                        </h5>
+                                        <h5 class="title text-uppercase">Contact Us</h5>
                                         <!-- <p>RadhaFoundation is a nonproﬁt organization supported by community leaders</p> -->
                                         <ul class="footer-blog title">
                                             <li>
@@ -498,9 +495,7 @@
                                                 <a href="#" class="d-flex justify-content-start align-items-center"
                                                     style="gap : 1rem">
                                                     <i class="fas fa-map-marker-alt ml-2"></i>
-                                                    <p>3rd floor, 19/13 West Patel
-                                                        Nagar, New Delhi - 110008
-                                                    </p>
+                                                    <p>3rd floor, 19/13 West Patel Nagar, New Delhi - 110008</p>
 
                                                 </a>
                                             </li>
@@ -516,8 +511,7 @@
         <div class="footer-bottom py-2">
             <div class="container">
                 <div class="text-center">
-                    <p class="mb-0">&copy; 2023 <a href="index.html">RADHA
-                            FOUNDATION</a></p>
+                    <p class="mb-0">&copy; 2023 <a href="index.html">RADHA FOUNDATION</a></p>
                 </div>
             </div>
         </div>

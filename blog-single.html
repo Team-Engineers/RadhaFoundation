@@ -43,34 +43,32 @@
 
         }
 
-        .header-bottom {
-            background: #06163a;
-            padding: 10px 0;
-        }
+       
 
         .menu>li>a {
             color: white;
             font-size: 20px;
         }
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: "Barlow", sans-serif;
-        }
+
 
         .header-bottom {
             background: black;
-            padding: 10px 0;
+            /* padding: 10px 0; */
         }
 
         @media (min-width: 1200px) {
             .container {
                 max-width: 1385px;
             }
+        }
+        .header-wrapper .menu-area  .menu{
+            margin : 0px;
+            padding : 0px;
+        }
+
+        .header-wrapper .logo h6{
+            font-weight: 500;
         }
     </style>
 </head>
@@ -127,11 +125,15 @@
         </div>
         <div class="header-bottom">
             <div class="container">
-                <div class="header-wrapper">
-                    <div class="logo">
+                <div class="header-wrapper style=" height: 60px;"">
+                    <div class="logo w-25 d-flex justify-content-center align-items-center flex-column">
                         <a href="index.html">
-                            <img src="assets/images/logo/logo.png" alt="logo" style="height: 60px;">
+                            <img src="assets/images/logo/logo.png" alt="logo" style="height: 40px;">
                         </a>
+                        <a href="index.html" class="d-none d-md-block" style="height: 20px;">
+                            <h6 class="mb-0 text-white text-center">Service to Humanity is Service to God</h6>
+                        </a>
+
                     </div>
                     <div class="menu-area">
                         <ul class="menu">
@@ -694,10 +696,12 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="footer-widget widget-about">
                                         <h5 class="title text-uppercase">About RADHA FOUNDATION</h5>
-                                        <p>
-                                            RadhaFoundation is a nonproﬁt organization supported by community leaders
-
-
+                                        
+                                        <p> Radha Foundation is a proprietorship concern of Mrs. Radha
+                                            Nathyal Memorial Foundation. Foundation is a section 25 company under
+                                            Companies act 2013 for social/charitable purposes. It has been established
+                                            in memory of Mrs Radha Rani Nathyal who expired on 5th of May, 2021 during
+                                            second Covid wave.
                                         </p>
                                         <div class="ftb-map">
                                             <iframe
