@@ -4492,10 +4492,25 @@ div[class*=col]:nth-of-type(3n + 3) .volunteer-item-2 .vol-pro {
 
 /*Feature Section Starts Here*/
 .feature-section {
-  background: #b13a80;
+  background-color: #929cdc;
+  background-image: linear-gradient(180deg, #929cdc 0%, #ca5750 28%, #FFCC70 58%, #ffffff 100%);  
 }
+
+.causes-section{
+  background-color: #929cdc;
+  background-image: linear-gradient(0deg, #929cdc 0%, #ca5750 28%, #FFCC70 58%, #ffffff 100%);  
+}
+
+.volunteer-section, .contact-section {
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  
+}
+
 .feature-section.style-2 {
-  background: transparent;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(117deg, #8EC5FC 0%, #E0C3FC 100%);
+  
 }
 .feature-section.style-2 .bg-shape {
   left: 0;
@@ -4520,7 +4535,7 @@ div[class*=col]:nth-of-type(3n + 3) .volunteer-item-2 .vol-pro {
 }
 @media (min-width: 1400px) and (max-width: 1800px) {
   .feature-section.style-2 .bg-shape {
-    left: calc(-12% - 0px);
+    left: calc(-13% - 22px);
   }
 }
 .feature-section.style-2 .section-header .sh-top {
@@ -6557,6 +6572,10 @@ div[class*=col]:nth-of-type(6n + 6) .shop-item .product-thumb, div[class*=col]:n
   margin-bottom: 0;
 }
 
+.clients-section{
+  background: radial-gradient(circle at 10% 20%, rgb(142, 224, 251) 0%, rgb(255, 121, 225) 100.7%);
+}
+
 .client-review {
   background-color: #fff;
   border-radius: 10px;
@@ -7356,7 +7375,7 @@ div[class*=col]:nth-of-type(6n + 6) .shop-item .product-thumb, div[class*=col]:n
 
 /* Clients Section start here*/
 .clients-section {
-  margin-top: -120px;
+0px;
 }
 .clients-section .section-wrapper .clents-left {
   background: #ee463b;
@@ -7875,7 +7894,7 @@ div[class*=col]:nth-of-type(6n + 6) .shop-item .product-thumb, div[class*=col]:n
 .abs-clients-thumb::after {
   width: 100%;
   height: calc(100% + 2px);
-  background: rgba(241, 174, 68, 0.9);
+  background: rgb(241 174 68 / 43%);
 }
 
 /* Project Section start here */
@@ -8792,7 +8811,7 @@ div[class*=col]:nth-of-type(3n+3) .post-top .post-by {
   height: 100%;
   position: fixed;
   z-index: 999999;
-  background: #ee463b;
+  background: linear-gradient(181deg, rgb(255, 230, 112) 10.4%, rgb(255, 100, 100) 43.8%, rgb(0, 93, 219) 105.8%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

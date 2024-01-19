@@ -19,15 +19,18 @@
     <link rel="stylesheet" href="assets/css/flaticon.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/logo/logo.png" type="image/x-icon">
     <style>
         .page-header {
             padding: 140px 0;
         }
+        .header-top {
+            background: linear-gradient(181deg, rgb(255, 230, 112) 10.4%, rgb(255, 100, 100) 43.8%, rgb(0, 93, 219) 105.8%);
+        }
 
         .footer-top {
             padding-bottom: 80px;
-            background: #06163a;
+            background: linear-gradient(181deg, rgb(2, 0, 97) 15%, rgb(97, 149, 219) 158.5%);
             padding-top: 80px;
         }
 
@@ -39,19 +42,12 @@
         }
 
         .menu>li>a {
-            font-size: 20px;
-
-        }
-
-
-
-        .menu>li>a {
-            color: white;
-            font-size: 20px;
+            /* color: white; */
+            /* font-size: 20px; */
         }
 
         .header-bottom {
-            background: black;
+            /* background: black; */
             padding: 0px;
         }
 
@@ -59,6 +55,18 @@
             .container {
                 max-width: 1385px;
             }
+        }
+
+        .volunteer-item{
+            width: 600px;
+            margin: 20px;
+        }
+        .volunteer-item-2 {
+            width: 300px;
+            margin: 20px auto;
+        }
+        .volunteer-item-2 .volunteer-thumb {
+            width: 300px;
         }
 
         .volunteer-item-2 .volunteer-thumb .content::before {
@@ -106,8 +114,7 @@
                 <div class="header-top-area">
                     <ul class="left">
                         <li>
-                            <i class="far fa-clock"></i> 9:30am - 6:30pm <span style="margin-left: 18px;"> Mon - Sat
-                            </span>
+                            <i class="far fa-clock"></i> 9:30am - 6:30pm <span style="margin-left: 18px;"> Mon - Sat </span>
                         </li>
                         <li>
                             <a href="#"><i class="fas fa-phone-alt"></i> +91 9717494574</a>
@@ -138,13 +145,13 @@
         </div>
         <div class="header-bottom">
             <div class="container">
-                <div class="header-wrapper style=" height: 60px;"">
-                    <div class="logo w-25 d-flex justify-content-center align-items-center flex-column">
+                <div class="header-wrapper">
+                    <div class="logo w-25 d-flex justify-content-center align-items-center flex-row">
                         <a href="index.html">
                             <img src="assets/images/logo/logo.png" alt="logo" style="height: 65px;">
                         </a>
-                        <a href="index.html" class="d-none" style="height: 20px;">
-                            <h6 class="mb-0 d-none text-white text-center">In Service of Humanity</h6>
+                        <a href="index.html" style="height: 20px; margin: 10px;">
+                            <h6 class="mb-0 text-center">In Service of Humanity</h6>
                         </a>
 
                     </div>
@@ -188,7 +195,7 @@
     <!-- ===========Header Search=========== -->
 
     <!-- ==========Banner Section Starts Here========== -->
-    <section class="page-header bg_img" data-background="assets/images/banner/page-header.jpg">
+    <section class="page-header bg_img" data-background="assets/images/banner/Team-Banner.jpeg">
         <div class="container">
             <div class="page-header-content">
                 <h1 class="title">our team members</h1>
@@ -217,7 +224,7 @@
                 <div class="col-lg-12">
                     <div class="section-header">
                         <!-- <span class="cate">A help to those who need it</span> -->
-                        <h3 class="title text-uppercase">FOUNDER GROUP MEMBERS</h3>
+                        <h3 class="title text-uppercase">FOUNDER MEMBERS</h3>
                     </div>
                 </div>
                 <div class="col-xl-4 col-sm-6">
@@ -230,30 +237,9 @@
                             </div>
                             <div class="content pos-rel">
                                 <h5 class="title"><a href="#">S.S.Nathyal</a></h5>
-                                <span>Founder Director
-                                </span>
+                                <p class="mt-3 info"> Brief Intro (4-5 lines)
+                                </p>
                             </div>
-                        </div>
-                        <div
-                            class="volunteer-content d-none d-flex flex-wrap align-items-center justify-content-between px-4">
-                            <ul class="volunteer-social d-none  justify-content-center">
-                                <li>
-                                    <a href="#0" class="so-share"><i class="fas fa-share-alt"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="google"><i class="fab fa-google-plus-g"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="dribble"><i class="fab fa-dribbble"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="vimeo"><i class="fab fa-vimeo-v"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
-                                </li>
-                            </ul>
-                            <a href="#" class="vol-pro d-none">See Profile +</a>
                         </div>
                     </div>
                 </div>
@@ -262,13 +248,13 @@
                         <div class="volunteer-thumb">
                             <div class="thumb">
                                 <a href="#">
-                                    <img src="assets/images/volunteer/10.jpg" alt="volunteer">
+                                    <img src="assets/images/volunteer/TM-Tanvi-Nathyal.jpeg" alt="volunteer" style="height: 270px;">
                                 </a>
                             </div>
                             <div class="content pos-rel">
                                 <h5 class="title"><a href="#">Tanvi NathyaL</a></h5>
-                                <span>Founder Director
-                                </span>
+                                <p class="mt-3 info"> Brief Intro (4-5 lines)
+                                </p>
                             </div>
                         </div>
                         <div class="volunteer-content d-flex flex-wrap align-items-center justify-content-between px-4">
@@ -298,14 +284,14 @@
     </section>
     <!-- ==========volunteer Section Ends Here========== -->
 
-
+    <!-- ======= Trustees -->
     <section class="volunteer-section padding-bottom padding-top">
         <div class="container">
             <div class="row mb-30-none justify-content-center">
                 <div class="col-lg-12">
                     <div class="section-header">
                         <!-- <span class="cate">A help to those who need it</span> -->
-                        <h3 class="title text-uppercase">MANAGEMENT COMMITTEE </h3>
+                        <h3 class="title text-uppercase">Trustees </h3>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -313,32 +299,12 @@
                         <div class="volunteer-inner">
                             <div class="volunteer-thumb">
                                 <div class="thumb-inner">
-                                    <a href="#"><img src="assets/images/volunteer/09.jpg" alt="volunteer"></a>
+                                    <a href="#"><img src="assets/images/volunteer/03.jpg" alt="volunteer"></a>
                                 </div>
                             </div>
                             <div class="volunteer-content">
-                                <h6 class="title"><a href="#"> S. S Nathyal </a></h6>
-                                <span class="info">Chairperson </span>
-                                <p>Volunteers are the heartbeat of our donation mission. Dedicated, compassionate, and
-                                    selfless, they embody the spirit of giving. Join us, make a difference, and be part
-                                    of change today.</p>
-                                <ul class="volunteer-social d-none">
-                                    <li>
-                                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="vimeo"><i class="fab fa-vimeo-v"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="behance"><i class="fab fa-behance"></i></a>
-                                    </li>
-                                </ul>
+                                <h6 class="title"><a href="#">S.S Nathyal</a></h6>
+                                <p class="mt-3 info">Brief Intro (4-5 lines)</p>
                             </div>
                         </div>
                     </div>
@@ -348,33 +314,12 @@
                         <div class="volunteer-inner">
                             <div class="volunteer-thumb">
                                 <div class="thumb-inner">
-                                    <a href="#"><img src="assets/images/volunteer/02.jpg" alt="volunteer"></a>
+                                    <a href="#"><img src="assets/images/volunteer/TM-Tanvi-Nathyal.jpeg" alt="volunteer" style="height: 222px;"></a>
                                 </div>
                             </div>
                             <div class="volunteer-content">
-                                <h6 class="title"><a href="#"> Tanvi Nathyal</a></h6>
-                                <span class="info">Executive Director
-                                </span>
-                                <p>Volunteers are the heartbeat of our donation mission. Dedicated, compassionate, and
-                                    selfless, they embody the spirit of giving. Join us, make a difference, and be part
-                                    of change today.</p>
-                                <ul class="volunteer-social d-none">
-                                    <li>
-                                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="vimeo"><i class="fab fa-vimeo-v"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="behance"><i class="fab fa-behance"></i></a>
-                                    </li>
-                                </ul>
+                                <h6 class="title"><a href="#">Tanvi Nathyal</a></h6>
+                                <p class="mt-3 info">Brief Intro (4-5 lines)</p>
                             </div>
                         </div>
                     </div>
@@ -388,26 +333,8 @@
                                 </div>
                             </div>
                             <div class="volunteer-content">
-                                <h6 class="title"><a href="#">Rajesh Mishra</a></h6>
-                                <span class="info"></span>
-                                <p></p>
-                                <ul class="volunteer-social d-none">
-                                    <li>
-                                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="vimeo"><i class="fab fa-vimeo-v"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="behance"><i class="fab fa-behance"></i></a>
-                                    </li>
-                                </ul>
+                                <h6 class="title"><a href="#">Danisha Nathayal</a></h6>
+                                <p class="mt-3 info">Brief Intro (4-5 lines)</p>
                             </div>
                         </div>
                     </div>
@@ -417,30 +344,12 @@
                         <div class="volunteer-inner">
                             <div class="volunteer-thumb">
                                 <div class="thumb-inner">
-                                    <a href="#"><img src="assets/images/volunteer/01.jpg" alt="volunteer"></a>
+                                    <a href="#"><img src="assets/images/volunteer/03.jpg" alt="volunteer"></a>
                                 </div>
                             </div>
                             <div class="volunteer-content">
-                                <h6 class="title"><a href="#">Vinay Khajuria</a></h6>
-                                <span class="info">Vice Principal, Idps Akhnoor</span>
-                                <p></p>
-                                <ul class="volunteer-social d-none">
-                                    <li>
-                                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="vimeo"><i class="fab fa-vimeo-v"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="behance"><i class="fab fa-behance"></i></a>
-                                    </li>
-                                </ul>
+                                <h6 class="title"><a href="#">Abhishek Chaudhary</a></h6>
+                                <p class="mt-3 info">Brief Intro (4-5 lines)</p>
                             </div>
                         </div>
                     </div>
@@ -450,33 +359,27 @@
                         <div class="volunteer-inner">
                             <div class="volunteer-thumb">
                                 <div class="thumb-inner">
-                                    <a href="#"><img src="assets/images/volunteer/04.jpg" alt="volunteer"></a>
+                                    <a href="#"><img src="assets/images/volunteer/03.jpg" alt="volunteer"></a>
                                 </div>
                             </div>
                             <div class="volunteer-content">
-                                <h6 class="title"><a href="#">Ashok Nathyal</a></h6>
-                                <span class="info">
-                                    Post graduate & Ex army official, presently involved in research of innovative
-                                    methods of agricultural activities.
-                                </span>
-                                <p></p>
-                                <ul class="volunteer-social d-none">
-                                    <li>
-                                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="vimeo"><i class="fab fa-vimeo-v"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="behance"><i class="fab fa-behance"></i></a>
-                                    </li>
-                                </ul>
+                                <h6 class="title"><a href="#">Vikas Maurya</a></h6>
+                                <p class="mt-3 info">Brief Intro (4-5 lines)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="volunteer-item">
+                        <div class="volunteer-inner">
+                            <div class="volunteer-thumb">
+                                <div class="thumb-inner">
+                                    <a href="#"><img src="assets/images/volunteer/03.jpg" alt="volunteer"></a>
+                                </div>
+                            </div>
+                            <div class="volunteer-content">
+                                <h6 class="title"><a href="#">Vipin Maurya</a></h6>
+                                <p class="mt-3 info">Brief Intro (4-5 lines)</p>
                             </div>
                         </div>
                     </div>
@@ -484,167 +387,224 @@
             </div>
         </div>
     </section>
-    <!-- ==========volunteer Section Starts Here========== -->
-    <section class="volunteer-section padding-top padding-bottom bg_img"
-        data-background="assets/images/bg/volunteer-bg.jpg">
+
+    <!-- ==== Trustee Ends here -->
+
+     <!-- ==========Mamgement Committee Section Starts Here========== -->
+
+     <section class="volunteer-section padding-top padding-bottom bg_img"
+     data-background="assets/images/bg/volunteer-bg.jpg">
+     <div class="container">
+         <div class="row justify-content-center mb-30-none">
+             <div class="col-lg-12">
+                 <div class="section-header">
+                     <!-- <span class="cate">A help to those who need it</span> -->
+                     <h3 class="title text-uppercase">MANAGEMENT COMMITTEE </h3>
+                 </div>
+             </div>
+             <div class="col-xl-4 col-sm-6">
+                 <div class="volunteer-item-2">
+                     <div class="volunteer-thumb">
+                         <div class="thumb">
+                             <a href="#">
+                                 <img src="assets/images/volunteer/TM-Vinay-Khajuria.jpg" alt="volunteer">
+                             </a>
+                         </div>
+                         <div class="content pos-rel">
+                             <h5 class="title"><a href="#"> Vinay Khajuria </a></h5>
+                             <p class="mt-3 info">Brief Intro (4-5 lines)</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-xl-4 col-sm-6">
+                 <div class="volunteer-item-2">
+                     <div class="volunteer-thumb">
+                         <div class="thumb">
+                             <a href="#">
+                                 <img src="assets/images/volunteer/TM-Rajesh-Mishra.jpeg" alt="volunteer" style="height: 270px;">
+                             </a>
+                         </div>
+                         <div class="content pos-rel">
+                             <h5 class="title"><a href="#"> Rajesh Mishra </a></h5>
+                             <p class="mt-3 info">Brief Intro (4-5 lines)</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-xl-4 col-sm-6">
+                 <div class="volunteer-item-2">
+                     <div class="volunteer-thumb">
+                         <div class="thumb">
+                             <a href="#">
+                                 <img src="assets/images/volunteer/03.jpg" alt="volunteer">
+                             </a>
+                         </div>
+                         <div class="content pos-rel">
+                             <h5 class="title"><a href="#"> Vipin Maurya </a></h5>
+                             <p class="mt-3 info">Brief Intro (4-5 lines)</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-xl-4 col-sm-6">
+                 <div class="volunteer-item-2">
+                     <div class="volunteer-thumb">
+                         <div class="thumb">
+                             <a href="#">
+                                 <img src="assets/images/volunteer/03.jpg" alt="volunteer">
+                             </a>
+                         </div>
+                         <div class="content pos-rel">
+                             <h5 class="title"><a href="#"> Kuldeep Nathayal </a></h5>
+                             <p class="mt-3 info">Brief Intro (4-5 lines)</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-xl-4 col-sm-6">
+                 <div class="volunteer-item-2">
+                     <div class="volunteer-thumb">
+                         <div class="thumb">
+                             <a href="#">
+                                 <img src="assets/images/volunteer/TM-Devendra-Singh-Rana.jpeg" alt="volunteer" style="height: 270px;">
+                             </a>
+                         </div>
+                         <div class="content pos-rel">
+                             <h5 class="title"><a href="#"> Devendra Singh Rana </a></h5>
+                             <p class="mt-3 info">Meet Devendra Singh Rana, our globe-trotting Founder with a knack for turning tech tides! With a resume that reads like a world tour of innovation, he's not just a tech maestroro; he's the Jedi Master of strategic moves.</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-xl-4 col-sm-6">
+                 <div class="volunteer-item-2">
+                     <div class="volunteer-thumb">
+                         <div class="thumb">
+                             <a href="#">
+                                 <img src="assets/images/volunteer/TM-Ashok-Nathyal.jpg" alt="volunteer">
+                             </a>
+                         </div>
+                         <div class="content pos-rel">
+                             <h5 class="title"><a href="#"> Ashok Nathayal </a></h5>
+                             <p class="mt-3 info">Brief Intro (4-5 lines)</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+
+    <!-- ==========Mamgement Committee Section ends Here========== -->
+    
+    <!-- ==========Advisory Section Starts Here========== -->
+
+    <section class="volunteer-section padding-bottom padding-top">
         <div class="container">
-            <div class="row justify-content-center mb-30-none">
+            <div class="row mb-30-none justify-content-center">
                 <div class="col-lg-12">
                     <div class="section-header">
                         <!-- <span class="cate">A help to those who need it</span> -->
                         <h3 class="title text-uppercase">ADVISORY COMMITTEE </h3>
                     </div>
                 </div>
-                <div class="col-xl-4 col-sm-6">
-                    <div class="volunteer-item-2">
-                        <div class="volunteer-thumb">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="assets/images/volunteer/09.jpg" alt="volunteer">
-                                </a>
+                <div class="col-lg-6">
+                    <div class="volunteer-item">
+                        <div class="volunteer-inner">
+                            <div class="volunteer-thumb">
+                                <div class="thumb-inner">
+                                    <a href="#"><img src="assets/images/volunteer/03.jpg" alt="volunteer"></a>
+                                </div>
                             </div>
-                            <div class="content pos-rel">
-                                <h5 class="title"><a href="#"> Kuldeep Nathyal </a></h5>
-                                <span>Retired Chief Engineer from J&K Govt
-                                </span>
+                            <div class="volunteer-content">
+                                <h6 class="title"><a href="#">Vikas Dogra</a></h6>
+                                <p class="mt-3 info">Brief Intro (4-5 lines)</p>
                             </div>
-                        </div>
-                        <div class="volunteer-content d-flex flex-wrap align-items-center justify-content-between px-4">
-                            <ul class="volunteer-social d-none justify-content-center">
-                                <li>
-                                    <a href="#0" class="so-share"><i class="fas fa-share-alt"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="google"><i class="fab fa-google-plus-g"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="dribble"><i class="fab fa-dribbble"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="vimeo"><i class="fab fa-vimeo-v"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
-                                </li>
-                            </ul>
-                            <a href="#" class="vol-pro d-none">See Profile +</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-sm-6">
-                    <div class="volunteer-item-2">
-                        <div class="volunteer-thumb">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="assets/images/volunteer/10.jpg" alt="volunteer">
-                                </a>
+                <div class="col-lg-6">
+                    <div class="volunteer-item">
+                        <div class="volunteer-inner">
+                            <div class="volunteer-thumb">
+                                <div class="thumb-inner">
+                                    <a href="#"><img src="assets/images/volunteer/03.jpg" alt="volunteer" style="height: 222px;"></a>
+                                </div>
                             </div>
-                            <div class="content pos-rel">
-                                <h5 class="title"><a href="#">Nisha Nathyal</a></h5>
-                                <span>DIG J&K Police
-
-                                </span>
+                            <div class="volunteer-content">
+                                <h6 class="title"><a href="#">Neelam Chaudhary</a></h6>
+                                <p class="mt-3 info">Brief Intro (4-5 lines)</p>
                             </div>
-                        </div>
-                        <div class="volunteer-content d-flex flex-wrap align-items-center justify-content-between px-4">
-                            <ul class="volunteer-social d-none justify-content-center">
-                                <li>
-                                    <a href="#0" class="so-share"><i class="fas fa-share-alt"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="google"><i class="fab fa-google-plus-g"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="dribble"><i class="fab fa-dribbble"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="vimeo"><i class="fab fa-vimeo-v"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
-                                </li>
-                            </ul>
-                            <a href="#" class="vol-pro d-none">See Profile +</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-sm-6">
-                    <div class="volunteer-item-2">
-                        <div class="volunteer-thumb">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="assets/images/volunteer/11.jpg" alt="volunteer">
-                                </a>
+                <div class="col-lg-6">
+                    <div class="volunteer-item">
+                        <div class="volunteer-inner">
+                            <div class="volunteer-thumb">
+                                <div class="thumb-inner">
+                                    <a href="#"><img src="assets/images/volunteer/03.jpg" alt="volunteer"></a>
+                                </div>
                             </div>
-                            <div class="content pos-rel">
-                                <h5 class="title"><a href="#">Vikas Dogra</a></h5>
-                                <span>Assistant Professor, Higher Education J&K
-                                </span>
+                            <div class="volunteer-content">
+                                <h6 class="title"><a href="#">Shakun Narania </a></h6>
+                                <p class="mt-3 info">Brief Intro (4-5 lines)</p>
                             </div>
-                        </div>
-                        <div class="volunteer-content d-flex flex-wrap align-items-center justify-content-between px-4">
-                            <ul class="volunteer-social d-none justify-content-center">
-                                <li>
-                                    <a href="#0" class="so-share"><i class="fas fa-share-alt"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="google"><i class="fab fa-google-plus-g"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="dribble"><i class="fab fa-dribbble"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="vimeo"><i class="fab fa-vimeo-v"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
-                                </li>
-                            </ul>
-                            <a href="#" class="vol-pro d-none">See Profile +</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-sm-6">
-                    <div class="volunteer-item-2">
-                        <div class="volunteer-thumb">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="assets/images/volunteer/11.jpg" alt="volunteer">
-                                </a>
+                <div class="col-lg-6">
+                    <div class="volunteer-item">
+                        <div class="volunteer-inner">
+                            <div class="volunteer-thumb">
+                                <div class="thumb-inner">
+                                    <a href="#"><img src="assets/images/volunteer/TM-Manoj-Jha.jpeg" alt="volunteer" style="height: 222px;"></a>
+                                </div>
                             </div>
-                            <div class="content pos-rel">
-                                <h5 class="title"><a href="#">Neelam Choudhary </a></h5>
-                                <span> Assistant Professor Jammu University
-
-                                </span>
+                            <div class="volunteer-content">
+                                <h6 class="title"><a href="#">Manoj Jha</a></h6>
+                                <p class="mt-3 info">We are proud to have Manoj, an Expert in Strategies, as a valuable member of our advisory team. A graduate from IIM Indore, Manoj brings a strategic mindset that is second to none.</p>
                             </div>
                         </div>
-                        <div class="volunteer-content d-flex flex-wrap align-items-center justify-content-between px-4">
-                            <ul class="volunteer-social d-none justify-content-center">
-                                <li>
-                                    <a href="#0" class="so-share"><i class="fas fa-share-alt"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="google"><i class="fab fa-google-plus-g"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="dribble"><i class="fab fa-dribbble"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="vimeo"><i class="fab fa-vimeo-v"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
-                                </li>
-                            </ul>
-                            <a href="#" class="vol-pro d-none">See Profile +</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="volunteer-item">
+                        <div class="volunteer-inner">
+                            <div class="volunteer-thumb">
+                                <div class="thumb-inner">
+                                    <a href="#"><img src="assets/images/volunteer/TM-Animesh-Ikshit.jpeg" alt="volunteer" style="height: 222px;"></a>
+                                </div>
+                            </div>
+                            <div class="volunteer-content">
+                                <h6 class="title"><a href="#">Animesh Ikshit</a></h6>
+                                <p class="mt-3 info">Animesh, who holds a Bachelor's in Design from NIFT Delhi. With a keen eye for aesthetics and a passion for innovation, Animesh brings a wealth of experience in transforming ideas into visually stunning realities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="volunteer-item">
+                        <div class="volunteer-inner">
+                            <div class="volunteer-thumb">
+                                <div class="thumb-inner">
+                                    <a href="#"><img src="assets/images/volunteer/TM-Prasenjit-Sharma.jpeg" alt="volunteer" style="height: 222px;"></a>
+                                </div>
+                            </div>
+                            <div class="volunteer-content">
+                                <h6 class="title"><a href="#">Prasenjit Sharma</a></h6>
+                                <p class="mt-3 info">Our Tech Architect, Prasanjit, is a graduate in Computer Science and Engineering from IIT Delhi. With a solid foundation in technology and a passion for architectural excellence, Prasanjit plays a crucial role in shaping the technological landscape of our organization.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ==========volunteer Section Ends Here========== -->
+
+    <!-- ==========Advisory Section Ends Here========== -->
+
     <!-- ==========Footer Section Starts Here========== -->
     <footer>
         <div class="footer-top">
